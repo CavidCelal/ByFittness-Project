@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2d75291b144a4d60917fe90674faba19" Name="Diagram1">
+        <EntityTypeShape EntityType="DbByFitnessModel.TblEgitim" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbByFitnessModel.TblEgitimKategori" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbByFitnessModel.TblEgitimSepet" Width="1.5" PointX="5.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbByFitnessModel.TblKategori" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbByFitnessModel.TblSatislar" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbByFitnessModel.TblSepet" Width="1.5" PointX="8.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbByFitnessModel.TblUrun" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <AssociationConnector Association="DbByFitnessModel.FK_TblEgitim_TblEgitimKategori" ManuallyRouted="false" />
+        <AssociationConnector Association="DbByFitnessModel.FK_TblEgitimSepet_TblEgitim" ManuallyRouted="false" />
+        <AssociationConnector Association="DbByFitnessModel.FK_TblSatislar_TblEgitim" ManuallyRouted="false" />
+        <AssociationConnector Association="DbByFitnessModel.FK_TblUrun_TblKategori" ManuallyRouted="false" />
+        <AssociationConnector Association="DbByFitnessModel.FK_TblSatislar_TblUrun" ManuallyRouted="false" />
+        <AssociationConnector Association="DbByFitnessModel.FK_TblSepet_TblUrun" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbByFitnessModel.sysdiagrams" Width="1.5" PointX="5.375" PointY="7.75" />
+        <EntityTypeShape EntityType="DbByFitnessModel.TblAddress" Width="1.5" PointX="5.25" PointY="16.375" />
+        <EntityTypeShape EntityType="DbByFitnessModel.TblKullanici" Width="1.5" PointX="0.75" PointY="9" />
+        <AssociationConnector Association="DbByFitnessModel.FK_TblAddress_TblKullanici" />
+        <AssociationConnector Association="DbByFitnessModel.FK_TblEgitim_TblKullanici" />
+        <AssociationConnector Association="DbByFitnessModel.FK_TblEgitimSepet_TblKullanici" />
+        <AssociationConnector Association="DbByFitnessModel.FK_TblSatislar_TblKullanici" />
+        <AssociationConnector Association="DbByFitnessModel.FK_TblSepet_TblKullanici" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

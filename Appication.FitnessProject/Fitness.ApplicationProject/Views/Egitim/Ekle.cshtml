@@ -1,0 +1,71 @@
+﻿@model Fitness.ApplicationProject.Models.Data.TblEgitim
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Ekle", "Egitim", FormMethod.Post, new { enctype = "multipart/Form-data" }))
+{
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Ad</label>
+                    <input type="text" name="EgitimAdi" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Açıklama</label>
+                    <input type="text" name="Aciklama" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Kategori</label>
+                    @Html.DropDownListFor(x => x.EgitimKategoriId, (List<SelectListItem>)ViewBag.ktgr, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Fiyat</label>
+                    <input type="text" name="EgitimFiyat" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Hangi Günler</label>
+                    <input type="text" name="EgitimGunleri" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Eğitim Saatları</label>
+                    <input type="text" name="EgitimSaat" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Resim", new { @class = "control-label col-md-2" })
+                    <input type="file" name="File" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Uzman</label>
+                    <input type="text" name="CoachAdi" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Uzman Cinsi</label>
+                    <input type="text" name="CoachCinsi" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Uzman Dogum Tarihi</label>
+                    <input type="text" name="CoachDogumTarih" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Uzman Tel</label>
+                    <input type="text" name="CoachTel" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Uzman Email</label>
+                    <input type="text" name="CoachEmail" class="form-control" />
+                </div>
+                <button class="btn btn-primary" type="submit">Ekle</button>
+                <a href="/Egitim/Index">Eğitim Listesi</a>
+            </div>
+        </div>
+    </div>
+}
+

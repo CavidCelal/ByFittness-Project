@@ -1,0 +1,120 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+h1,h2{
+	font-family: 'Roboto', sans-serif!important;
+}*/
+.card-header{
+	padding:0!important;
+}
+
+.btn-link{
+	    color: black;
+    font-size: 19px;
+}
+
+button.btn.btn-link:hover {
+    color: red;
+}
+
+.btn-green{
+	background-color: #128c7e!important;
+}
+
+.card{
+	margin-bottom: 32px;
+}
+
+li.custom-red{
+ 		display: none;
+ }
+
+ li.custom-gray{
+ 	display: none;
+ }
+ 
+@media (max-width: 1400px) {
+
+li.custom-red{
+ 		display: none;
+ 	
+ 	}
+ li.custom-gray{
+ 	display: none;
+ }
+}
+
+@media (max-width: 1199px) {
+	li.custom-red{
+ 		display: none;
+ 	}
+ 	 li.custom-gray{
+ 	display: none;
+ }
+}
+
+/****/
+
+@media (max-width: 991px) {
+	li.custom-red{
+ 		display: block;
+ 		background-color: red;
+ 	}
+
+ 	li.custom-gray{
+ 	display: block;
+ 	background-color: gray;
+ }
+
+ 	l
+ 	li.custom-red a{
+ 		color:white!important;
+ 	}
+ 	li.custom-gray a{
+ 		color:white!important;
+ 	}
+}
+
+/******/
+
+@media (max-width: 767px) {
+	li.custom-red{
+ 		display: block;
+ 		background-color: red;
+ 	}
+	
+	 	li.custom-gray{
+ 	display: block;
+ 	background-color: gray;
+ }
+ 
+ 	li.custom-red a{
+ 		color:white!important;
+ 	}
+ 	li.custom-gray a{
+ 		color:white!important;
+ 	}
+}
+
+/*****/
+
+@media (max-width: 575px) {
+	
+	li.custom-red{
+ 		display: block;
+ 		background-color: red;
+ 	}
+
+ 	li.custom-gray{
+	 	display: block;
+	 	background-color: gray;
+	 }
+
+ 	li.custom-red a{
+ 		color:white!important;
+ 	}
+
+ 	li.custom-gray a{
+ 		color:white!important;
+ 	}
+}
+

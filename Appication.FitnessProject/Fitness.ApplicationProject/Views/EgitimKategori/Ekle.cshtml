@@ -1,0 +1,36 @@
+﻿@model Fitness.ApplicationProject.Models.Data.TblEgitimKategori
+
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Ekle", "EgitimKategori", FormMethod.Post))
+{
+    <br />
+    <br />
+    <div class="container">
+        <br />
+        <div class="row">
+            @*<form action="/Kategori/Ekle" method="post" >*@
+            <div class="col-md-4">
+                <tr>
+                    <td><label>Kategori Adı</label></td>
+                    <td>@Html.TextBoxFor(x => x.EgitimKategoriAdi, new { @class = "form-control" })</td>
+                </tr>
+                <br />
+                <tr>
+                    <td><label>Açıklama</label></td>
+                    <td>@Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })</td>
+                </tr>
+               
+              
+
+                <br />
+                <button type="submit" class="btn btn-default">Ekle</button>
+            </div>
+            @*</form>*@
+        </div>
+    </div>
+}
+

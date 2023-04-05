@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbFitnessModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DbFitnessEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(DbFitnessModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(DbFitnessModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="sysdiagrams" EntityType="DbFitnessModel.sysdiagrams" />
+    <EntitySet Name="TblCoach" EntityType="DbFitnessModel.TblCoach" />
+    <EntitySet Name="TblEgitim" EntityType="DbFitnessModel.TblEgitim" />
+    <EntitySet Name="TblEgitimKategori" EntityType="DbFitnessModel.TblEgitimKategori" />
+    <EntitySet Name="TblEgitimSepet" EntityType="DbFitnessModel.TblEgitimSepet" />
+    <EntitySet Name="TblFinance" EntityType="DbFitnessModel.TblFinance" />
+    <EntitySet Name="TblKategori" EntityType="DbFitnessModel.TblKategori" />
+    <EntitySet Name="TblSatislar" EntityType="DbFitnessModel.TblSatislar" />
+    <EntitySet Name="TblSepet" EntityType="DbFitnessModel.TblSepet" />
+    <EntitySet Name="TblUrun" EntityType="DbFitnessModel.TblUrun" />
+    <EntitySet Name="TblKullanicii" EntityType="DbFitnessModel.TblKullanicii" />
+    <AssociationSet Name="FK_TblEgitim_TblCoach" Association="DbFitnessModel.FK_TblEgitim_TblCoach">
+      <End Role="TblCoach" EntitySet="TblCoach" />
+      <End Role="TblEgitim" EntitySet="TblEgitim" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblEgitimSepet_TblCoach" Association="DbFitnessModel.FK_TblEgitimSepet_TblCoach">
+      <End Role="TblCoach" EntitySet="TblCoach" />
+      <End Role="TblEgitimSepet" EntitySet="TblEgitimSepet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblEgitim_TblEgitimKategori1" Association="DbFitnessModel.FK_TblEgitim_TblEgitimKategori1">
+      <End Role="TblEgitimKategori" EntitySet="TblEgitimKategori" />
+      <End Role="TblEgitim" EntitySet="TblEgitim" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblEgitimSepet_TblEgitim" Association="DbFitnessModel.FK_TblEgitimSepet_TblEgitim">
+      <End Role="TblEgitim" EntitySet="TblEgitim" />
+      <End Role="TblEgitimSepet" EntitySet="TblEgitimSepet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblKullanicii_TblEgitimSepet" Association="DbFitnessModel.FK_TblKullanicii_TblEgitimSepet">
+      <End Role="TblEgitimSepet" EntitySet="TblEgitimSepet" />
+      <End Role="TblKullanicii" EntitySet="TblKullanicii" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblKullanicii_TblFinance" Association="DbFitnessModel.FK_TblKullanicii_TblFinance">
+      <End Role="TblFinance" EntitySet="TblFinance" />
+      <End Role="TblKullanicii" EntitySet="TblKullanicii" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblUrun_TblKategori" Association="DbFitnessModel.FK_TblUrun_TblKategori">
+      <End Role="TblKategori" EntitySet="TblKategori" />
+      <End Role="TblUrun" EntitySet="TblUrun" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblKullanicii_TblSatislar" Association="DbFitnessModel.FK_TblKullanicii_TblSatislar">
+      <End Role="TblSatislar" EntitySet="TblSatislar" />
+      <End Role="TblKullanicii" EntitySet="TblKullanicii" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblSatislar_TblUrun1" Association="DbFitnessModel.FK_TblSatislar_TblUrun1">
+      <End Role="TblUrun" EntitySet="TblUrun" />
+      <End Role="TblSatislar" EntitySet="TblSatislar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblKullanicii_TblSepet" Association="DbFitnessModel.FK_TblKullanicii_TblSepet">
+      <End Role="TblSepet" EntitySet="TblSepet" />
+      <End Role="TblKullanicii" EntitySet="TblKullanicii" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TblSepet_TblUrun" Association="DbFitnessModel.FK_TblSepet_TblUrun">
+      <End Role="TblUrun" EntitySet="TblUrun" />
+      <End Role="TblSepet" EntitySet="TblSepet" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TblCoach">
+    <Key>
+      <PropertyRef Name="CoachId" />
+    </Key>
+    <Property Name="CoachId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CGen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CDob" Type="DateTime" Precision="0" />
+    <Property Name="CPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CExprience" Type="Int32" />
+    <Property Name="CAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CPass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TblEgitim" Relationship="DbFitnessModel.FK_TblEgitim_TblCoach" FromRole="TblCoach" ToRole="TblEgitim" />
+    <NavigationProperty Name="TblEgitimSepet" Relationship="DbFitnessModel.FK_TblEgitimSepet_TblCoach" FromRole="TblCoach" ToRole="TblEgitimSepet" />
+  </EntityType>
+  <EntityType Name="TblEgitim">
+    <Key>
+      <PropertyRef Name="EgitimId" />
+    </Key>
+    <Property Name="EgitimId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EgitimKategoriId" Type="Int32" Nullable="false" />
+    <Property Name="CoachId" Type="Int32" />
+    <Property Name="Aciklama" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EgitimAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EgitimFiyat" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="EgitimResmi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TblCoach" Relationship="DbFitnessModel.FK_TblEgitim_TblCoach" FromRole="TblEgitim" ToRole="TblCoach" />
+    <NavigationProperty Name="TblEgitimKategori" Relationship="DbFitnessModel.FK_TblEgitim_TblEgitimKategori1" FromRole="TblEgitim" ToRole="TblEgitimKategori" />
+    <NavigationProperty Name="TblEgitimSepet" Relationship="DbFitnessModel.FK_TblEgitimSepet_TblEgitim" FromRole="TblEgitim" ToRole="TblEgitimSepet" />
+  </EntityType>
+  <EntityType Name="TblEgitimKategori">
+    <Key>
+      <PropertyRef Name="EgitimKategoriId" />
+    </Key>
+    <Property Name="EgitimKategoriId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EgitimKategoriAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Aciklama" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TblEgitim" Relationship="DbFitnessModel.FK_TblEgitim_TblEgitimKategori1" FromRole="TblEgitimKategori" ToRole="TblEgitim" />
+  </EntityType>
+  <EntityType Name="TblEgitimSepet">
+    <Key>
+      <PropertyRef Name="EgitimSepetId" />
+    </Key>
+    <Property Name="EgitimSepetId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EgitimId" Type="Int32" />
+    <Property Name="KullaniciId" Type="Int32" />
+    <Property Name="CoachId" Type="Int32" />
+    <Property Name="Fiyat" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="Resim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TblCoach" Relationship="DbFitnessModel.FK_TblEgitimSepet_TblCoach" FromRole="TblEgitimSepet" ToRole="TblCoach" />
+    <NavigationProperty Name="TblEgitim" Relationship="DbFitnessModel.FK_TblEgitimSepet_TblEgitim" FromRole="TblEgitimSepet" ToRole="TblEgitim" />
+    <NavigationProperty Name="TblKullanicii" Relationship="DbFitnessModel.FK_TblKullanicii_TblEgitimSepet" FromRole="TblEgitimSepet" ToRole="TblKullanicii" />
+  </EntityType>
+  <EntityType Name="TblFinance">
+    <Key>
+      <PropertyRef Name="BiId" />
+    </Key>
+    <Property Name="BiId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Agent" Type="Int32" />
+    <Property Name="KullaniciId" Type="Int32" />
+    <Property Name="BPeriod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BDate" Type="DateTime" Precision="0" />
+    <Property Name="BAmount" Type="Int32" />
+    <NavigationProperty Name="TblKullanicii" Relationship="DbFitnessModel.FK_TblKullanicii_TblFinance" FromRole="TblFinance" ToRole="TblKullanicii" />
+  </EntityType>
+  <EntityType Name="TblKategori">
+    <Key>
+      <PropertyRef Name="KategoriId" />
+    </Key>
+    <Property Name="KategoriId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KategoriAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Aciklama" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Durum" Type="Boolean" />
+    <NavigationProperty Name="TblUrun" Relationship="DbFitnessModel.FK_TblUrun_TblKategori" FromRole="TblKategori" ToRole="TblUrun" />
+  </EntityType>
+  <EntityType Name="TblSatislar">
+    <Key>
+      <PropertyRef Name="SatisId" />
+    </Key>
+    <Property Name="SatisId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UrunId" Type="Int32" />
+    <Property Name="KullaniciId" Type="Int32" />
+    <Property Name="Adet" Type="Int32" />
+    <Property Name="Fiyat" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="Resim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TblKullanicii" Relationship="DbFitnessModel.FK_TblKullanicii_TblSatislar" FromRole="TblSatislar" ToRole="TblKullanicii" />
+    <NavigationProperty Name="TblUrun" Relationship="DbFitnessModel.FK_TblSatislar_TblUrun1" FromRole="TblSatislar" ToRole="TblUrun" />
+  </EntityType>
+  <EntityType Name="TblSepet">
+    <Key>
+      <PropertyRef Name="SepetId" />
+    </Key>
+    <Property Name="SepetId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UrunId" Type="Int32" />
+    <Property Name="KullaniciId" Type="Int32" />
+    <Property Name="Adet" Type="Int32" />
+    <Property Name="Fiyat" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="Resim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TblKullanicii" Relationship="DbFitnessModel.FK_TblKullanicii_TblSepet" FromRole="TblSepet" ToRole="TblKullanicii" />
+    <NavigationProperty Name="TblUrun" Relationship="DbFitnessModel.FK_TblSepet_TblUrun" FromRole="TblSepet" ToRole="TblUrun" />
+  </EntityType>
+  <EntityType Name="TblUrun">
+    <Key>
+      <PropertyRef Name="UrunId" />
+    </Key>
+    <Property Name="UrunId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KategoriId" Type="Int32" />
+    <Property Name="UrunAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Aciklama" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Fiyat" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Stok" Type="Int32" />
+    <Property Name="Populer" Type="Boolean" />
+    <Property Name="Resim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TblKategori" Relationship="DbFitnessModel.FK_TblUrun_TblKategori" FromRole="TblUrun" ToRole="TblKategori" />
+    <NavigationProperty Name="TblSatislar" Relationship="DbFitnessModel.FK_TblSatislar_TblUrun1" FromRole="TblUrun" ToRole="TblSatislar" />
+    <NavigationProperty Name="TblSepet" Relationship="DbFitnessModel.FK_TblSepet_TblUrun" FromRole="TblUrun" ToRole="TblSepet" />
+  </EntityType>
+  <EntityType Name="TblKullanicii">
+    <Key>
+      <PropertyRef Name="KullaniciId" />
+    </Key>
+    <Property Name="KullaniciId" Type="Int32" Nullable="false" />
+    <Property Name="Adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KullaniciEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SifreTekrar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Roller" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TblEgitimSepet" Relationship="DbFitnessModel.FK_TblKullanicii_TblEgitimSepet" FromRole="TblKullanicii" ToRole="TblEgitimSepet" />
+    <NavigationProperty Name="TblFinance" Relationship="DbFitnessModel.FK_TblKullanicii_TblFinance" FromRole="TblKullanicii" ToRole="TblFinance" />
+    <NavigationProperty Name="TblSatislar" Relationship="DbFitnessModel.FK_TblKullanicii_TblSatislar" FromRole="TblKullanicii" ToRole="TblSatislar" />
+    <NavigationProperty Name="TblSepet" Relationship="DbFitnessModel.FK_TblKullanicii_TblSepet" FromRole="TblKullanicii" ToRole="TblSepet" />
+  </EntityType>
+  <Association Name="FK_TblEgitim_TblCoach">
+    <End Type="DbFitnessModel.TblCoach" Role="TblCoach" Multiplicity="0..1" />
+    <End Type="DbFitnessModel.TblEgitim" Role="TblEgitim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblCoach">
+        <PropertyRef Name="CoachId" />
+      </Principal>
+      <Dependent Role="TblEgitim">
+        <PropertyRef Name="CoachId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblEgitimSepet_TblCoach">
+    <End Type="DbFitnessModel.TblCoach" Role="TblCoach" Multiplicity="0..1" />
+    <End Type="DbFitnessModel.TblEgitimSepet" Role="TblEgitimSepet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblCoach">
+        <PropertyRef Name="CoachId" />
+      </Principal>
+      <Dependent Role="TblEgitimSepet">
+        <PropertyRef Name="CoachId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblEgitim_TblEgitimKategori1">
+    <End Type="DbFitnessModel.TblEgitimKategori" Role="TblEgitimKategori" Multiplicity="1" />
+    <End Type="DbFitnessModel.TblEgitim" Role="TblEgitim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblEgitimKategori">
+        <PropertyRef Name="EgitimKategoriId" />
+      </Principal>
+      <Dependent Role="TblEgitim">
+        <PropertyRef Name="EgitimKategoriId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblEgitimSepet_TblEgitim">
+    <End Type="DbFitnessModel.TblEgitim" Role="TblEgitim" Multiplicity="0..1" />
+    <End Type="DbFitnessModel.TblEgitimSepet" Role="TblEgitimSepet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblEgitim">
+        <PropertyRef Name="EgitimId" />
+      </Principal>
+      <Dependent Role="TblEgitimSepet">
+        <PropertyRef Name="EgitimId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblKullanicii_TblEgitimSepet">
+    <End Type="DbFitnessModel.TblEgitimSepet" Role="TblEgitimSepet" Multiplicity="1" />
+    <End Type="DbFitnessModel.TblKullanicii" Role="TblKullanicii" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TblEgitimSepet">
+        <PropertyRef Name="EgitimSepetId" />
+      </Principal>
+      <Dependent Role="TblKullanicii">
+        <PropertyRef Name="KullaniciId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblKullanicii_TblFinance">
+    <End Type="DbFitnessModel.TblFinance" Role="TblFinance" Multiplicity="1" />
+    <End Type="DbFitnessModel.TblKullanicii" Role="TblKullanicii" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TblFinance">
+        <PropertyRef Name="BiId" />
+      </Principal>
+      <Dependent Role="TblKullanicii">
+        <PropertyRef Name="KullaniciId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblUrun_TblKategori">
+    <End Type="DbFitnessModel.TblKategori" Role="TblKategori" Multiplicity="0..1" />
+    <End Type="DbFitnessModel.TblUrun" Role="TblUrun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblKategori">
+        <PropertyRef Name="KategoriId" />
+      </Principal>
+      <Dependent Role="TblUrun">
+        <PropertyRef Name="KategoriId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblKullanicii_TblSatislar">
+    <End Type="DbFitnessModel.TblSatislar" Role="TblSatislar" Multiplicity="1" />
+    <End Type="DbFitnessModel.TblKullanicii" Role="TblKullanicii" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TblSatislar">
+        <PropertyRef Name="SatisId" />
+      </Principal>
+      <Dependent Role="TblKullanicii">
+        <PropertyRef Name="KullaniciId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblSatislar_TblUrun1">
+    <End Type="DbFitnessModel.TblUrun" Role="TblUrun" Multiplicity="0..1" />
+    <End Type="DbFitnessModel.TblSatislar" Role="TblSatislar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblUrun">
+        <PropertyRef Name="UrunId" />
+      </Principal>
+      <Dependent Role="TblSatislar">
+        <PropertyRef Name="UrunId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblKullanicii_TblSepet">
+    <End Type="DbFitnessModel.TblSepet" Role="TblSepet" Multiplicity="1" />
+    <End Type="DbFitnessModel.TblKullanicii" Role="TblKullanicii" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="TblSepet">
+        <PropertyRef Name="SepetId" />
+      </Principal>
+      <Dependent Role="TblKullanicii">
+        <PropertyRef Name="KullaniciId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TblSepet_TblUrun">
+    <End Type="DbFitnessModel.TblUrun" Role="TblUrun" Multiplicity="0..1" />
+    <End Type="DbFitnessModel.TblSepet" Role="TblSepet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TblUrun">
+        <PropertyRef Name="UrunId" />
+      </Principal>
+      <Dependent Role="TblSepet">
+        <PropertyRef Name="UrunId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,111 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+    <link href="~/assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+
+        .container {
+            padding: 16px;
+        }
+
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+            input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .registerbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+            .registerbtn:hover {
+                opacity: 1;
+            }
+
+
+        a {
+            color: dodgerblue;
+        }
+
+
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+    </style>
+    <form @*action="action_page.php"*@ method="post">
+        <div class="container">
+            <h1>Kayıt Ol</h1>
+            <p>Hesap oluşturmak için lütfen bu formu doldurunuz.</p>
+            <hr>
+            <label for="email"><b>Ad</b></label>
+            <input type="text" placeholder="Adınız" name="Adi" required>
+
+            <label for="email"><b>Soyad</b></label>
+            <input type="text" placeholder="Soyadınız" name="Soyad" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Email" name="KullaniciEmail" id="email" required>
+
+            <label for="email"><b>Telefon</b></label>
+            <input type="text" placeholder="Tel" name="Telefon" required>
+
+            <label for="email"><b>Kullanıcı Ad</b></label>
+            <input type="text" placeholder="Kullanıcı Adınız" name="KullaniciAdi" required>
+
+            <label for="psw"><b>Şifre</b></label>
+            <input type="password" placeholder="Şifreniz" name="Sifre" id="psw" required>
+
+            <label for="psw-repeat"><b>Şifre Tekrar</b></label>
+            <input type="password" placeholder="Şifre Tekrar" name="SifreTekrar" id="psw-repeat" required>
+
+
+            <hr>
+
+
+            <button type="submit" class="registerbtn">Kayıt Ol</button>
+        </div>
+
+        <div class="container signin">
+            <p>Zaten bir hesabınız var mı? <a href="~/Account/LogOut">Giriş Yap</a>.</p>
+        </div>
+    </form>
+</body>
+</html>

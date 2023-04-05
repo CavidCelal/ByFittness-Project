@@ -1,0 +1,100 @@
+﻿
+@model Fitness.ApplicationProject.Models.Data.TblKullanici
+
+<style>
+    * {
+        box-sizing: border-box
+    }
+
+    /* Add padding to containers */
+    .container {
+        padding: 16px;
+    }
+
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+    /* Overwrite default styles of hr */
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    /* Set a style for the submit/register button */
+    .registerbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+
+    /* Add a blue text color to links */
+    a {
+        color: dodgerblue;
+    }
+
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+        background-color: #f1f1f1;
+        text-align: center;
+    }
+</style>
+
+
+<link href="~/assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
+<form method="post">
+    <div class="container">
+        <br />
+        <label for="email"><b>Ad</b></label>
+        <input type="text" placeholder="Adınız" name="Adi" value="@Model.Adi" required>
+
+        <label for="email"><b>Soyad</b></label>
+        <input type="text" placeholder="Soyadınız" value="@Model.Soyad" name="Soyad" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Email" value="@Model.KullaniciEmail" name="KullaniciEmail" id="email" required>
+
+        <label for="email"><b>Kullanıcı Ad</b></label>
+        <input type="text" placeholder="Kullanıcı Adınız" value="@Model.KullaniciAdi" name="KullaniciAdi" required>
+
+        <label for="email"><b>Telefon</b></label>
+        <input type="text" placeholder="Tel" value="@Model.Telefon" name="Telefon" required>
+
+        <label for="psw"><b>Şifre</b></label>
+        <input type="password" placeholder="Şifreniz" value="@Model.Sifre" name="Sifre" id="psw" required>
+
+        <label for="psw-repeat"><b>Şifre Tekrar</b></label>
+        <input type="password" placeholder="Şifre Tekrar" value="@Model.SifreTekrar" name="SifreTekrar" id="psw-repeat" required>
+
+      
+
+
+
+        <button type="submit" class="btn btn-primary">Güncelle</button>
+    </div>
+</form>
+
+
+
+
+

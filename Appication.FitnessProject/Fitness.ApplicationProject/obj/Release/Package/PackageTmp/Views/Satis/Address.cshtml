@@ -1,0 +1,46 @@
+﻿@model Fitness.ApplicationProject.Models.Data.TblAddress
+@{
+    ViewBag.Title = "Address";
+}
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="blog-box-item mb-0">
+                <div class="blog-content pl-0 pr-0">
+                    <h2>TESLİMAT ADRESİ</h2>
+                    <form class="contact-form blog-model-form" method="post" action="~/Satis/Address">
+                        @Html.HiddenFor(x => x.KullaniciId)
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="text" name="Ulke" id="fname" class="form-placeholder-color" placeholder="Ülke" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="text" name="Sehir" id="phonenumber" class="form-placeholder-color form_style" placeholder="Şehir" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="text" name="Il" id="emailaddress" class="form-placeholder-color" placeholder="İL" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="text" name="Address" id="emailaddress" class="form-placeholder-color" placeholder="Adres" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group mb-0">
+                                    <input type="text" name="PostaKodu" id="subject" class="form-placeholder-color form_style" placeholder="Posta Kodu" required>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" name="btnsubmit" id="sendbtn">Ödeme Yap</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  

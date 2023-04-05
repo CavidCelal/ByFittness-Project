@@ -1,0 +1,904 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Trainers | ByFitness</title>
+    <!-- /SEO Ultimate -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Latest compiled and minified CSS -->
+
+
+    <link href="/assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/js/bootstrap.min.js">
+    <!-- Font Awesome link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- StyleSheet link CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/mediaqueries.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+</head>
+
+<body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
+
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sub-banner-section trainers-banner-section">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    @*<a class="navbar-brand" href="./index.html"><figure class="mb-0"><img src="./assets/images/xtreme_fitness_logo.png" alt="" class="img-fluid"></figure></a>*@
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Home/Test">Ana Sayfa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Home/Hakkimizda">Hakkımızda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Home/Contact">Iletişim</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Coach/ORnek">Trainers</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/Urun/Index">Ürünler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Egitim/Index">Eğitim</a>
+                            </li>
+                            @if (User.IsInRole("User"))
+                            {
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Sepet/Index">Sepetim<label style="color:red">@{ Html.RenderAction("SepetCount", "Sepet");}</label></a>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/Account/Guncelle">@Session["KullaniciEmail"]</a>
+                                </li>
+
+                            }
+
+                            @if (User.IsInRole("A"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Kategori/Index">Kategoriler</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Egitim/Index">Eğitim Ekle</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/EgitimKategori/Index">Eğitim Ktg</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Urun/StokGrafik">Stok Grafik</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Istatistik/Index">İstatistikler</a>
+                                </li>
+
+                            }
+                            <li class="nav-item">
+                                <a class="nav-link contact_btn" href="/Account/LogOut">Çıkış Yap</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- SUB BANNER SECTION -->
+        <section class="banner-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="banner-section-content">
+                            <h1 data-aos="fade-up" class="aos-init aos-animate">Eğitmenlerimiz</h1>
+                            <div class="btn_wrapper">
+                                <span class="sub_home_span">Home </span>-<span class="sub_span"> Eğitmenler</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- TEAM MEMBERS SECTION -->
+    <section class="team_member_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="team_member_content">
+                        <h5>Takım Üyeleri</h5>
+                        <h2>FİTNESS UZMANLARDAN OLUŞAN EKİP</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row aos-init" data-aos="fade-up">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="team_member_box_content">
+                        <div class="team_member_box_upper_portion">
+                            <figure class="mb-0">
+
+                                <img src="/assets/images/team_member_1.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="team_member_box_lower_portion">
+                            <h5>ANDREW JOINER</h5>
+                            <p>Crossfit Eğitmeni</p>
+                            <div class="team_member_social_icons">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="team_member_box_content">
+                        <div class="team_member_box_upper_portion">
+                            <figure class="mb-0">
+                                <img src="/assets/images/team_member_2.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="team_member_box_lower_portion">
+                            <h5>PATRICIA WOODRUM</h5>
+                            <p>Cardio &amp; Conditioning</p>
+                            <div class="team_member_social_icons">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="team_member_box_content">
+                        <div class="team_member_box_upper_portion">
+                            <figure class="mb-0">
+                                <img src="/assets/images/team_member_3.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="team_member_box_lower_portion">
+                            <h5>MUZAFFAR MUZİK</h5>
+                            <p>Fitness Eğitmeni</p>
+                            <div class="team_member_social_icons">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row aos-init" data-aos="fade-up">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="team_member_box_content">
+                        <div class="team_member_box_upper_portion">
+                            <figure class="mb-0">
+                                <img src="/assets/images/team_member_4.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="team_member_box_lower_portion">
+                            <h5>HAWARD SKINNER</h5>
+                            <p>Dumbbell Trainer</p>
+                            <div class="team_member_social_icons">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="team_member_box_content">
+                        <div class="team_member_box_upper_portion">
+                            <figure class="mb-0">
+                                <img src="/assets/images/team_member_5.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="team_member_box_lower_portion">
+                            <h5>RAYMOND BROWN</h5>
+                            <p>Boxing Trainer</p>
+                            <div class="team_member_social_icons">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="team_member_box_content">
+                        <div class="team_member_box_upper_portion">
+                            <figure class="mb-0">
+                                <img src="/assets/images/team_member_6.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="team_member_box_lower_portion">
+                            <h5>CHARLES MALLISTER</h5>
+                            <p>Cardio Trainer</p>
+                            <div class="team_member_social_icons">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- QUOTE SECTION -->
+    <section class="quote_section">
+        <div class="container">
+            <div class="row aos-init" data-aos="fade-right">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="quote_content">
+                        <h2>“BAŞARI GENELLİKLE ONU ARAMAK İÇİN MEŞGUL OLANLARA GELİR.”</h2>
+                        <div class="quote_content_wrapper">
+                            <div class="quote_wrapper">
+                                <h6>ANDREW JAMES</h6>
+                                <span>Fitness Uzmanı</span>
+                                <figure class="quote_image mb-0">
+                                    <img src="/assets/images/trainers_success_image.png" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <figure class="quote_left_icon left_icon mb-0">
+                <img src="/assets/images/quote_left_icon.png" alt="" class="img-fluid">
+            </figure>
+            <figure class="quote_right_icon right_icon mb-0">
+                <img src="/assets/images/quote_right_icon.png" alt="" class="img-fluid">
+            </figure>
+        </div>
+    </section>
+    <!-- CONTACT US SECTION -->
+    <section class="contact_us_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-lg-block d-md-flex align-items-center">
+                    <div class="contact_us_image">
+                        <figure class="mb-0">
+                            <img src="/assets/images/contact_us_image.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="contact_us_form_content aos-init" data-aos="fade-right">
+                        <h5>BİZE ULAŞIN</h5>
+                        <h2>MESAJ GÖNDER &amp; TAKIMIMIZA KATIL</h2>
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group mb-0">
+                                        <input type="text" name="name" id="fullname" class="form-placeholder-color" placeholder="Ad">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group mb-0">
+                                        <input type="tel" name="phone" id="phonenum" class="form-placeholder-color form_style" placeholder="Telefon">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group mb-0">
+                                        <input type="email" name="email" id="emailaddrs" class="form-placeholder-color" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group mb-0">
+                                        <input type="text" name="sub" id="title" class="form-placeholder-color form_style" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class=" form-group mb-0">
+                                        <textarea rows="3" name="msg" id="comment" class="form-placeholder-color" placeholder="Mesaj"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_wrapper">
+                                <button type="submit" name="btnsubmit" id="submitbutton">Send now<i class="fa-solid fa-play"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OUR NEWS SECTION -->
+    <section class="our_news_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="our_news_content">
+                        <h5>HABERLER</h5>
+                        <h2>EN SON BLOG YAZILARI</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row aos-init" data-aos="fade-up">
+                <div class="owl-carousel owl-theme owl-loaded owl-drag">
+
+
+
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-750px, 0px, 0px); transition: all 0.25s ease 0s; width: 2625px;">
+                            <div class="owl-item cloned" style="width: 345px; margin-right: 30px;">
+                                <div class="item">
+                                    <div class="our_news_box_content">
+                                        <div class="our_news_box_upper_portion">
+                                            <figure class="mb-0">
+                                                <img src="~/assets/images/our_news_2.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <div class="our_news_box_image_content">
+                                                <h4>12</h4>
+                                                <span class="month">Mar</span>
+                                            </div>
+                                        </div>
+                                        <div class="our_news_box_lower_portion">
+                                            <h5>BU SİLİNDİR İÇİN ONU SUÇLAMAK İÇİN</h5>
+                                            <p>Baslık.</p>
+                                            <div class="btn_wrapper">
+                                                <a class="read_more_btn text-decoration-none" data-toggle="modal" data-target="#blog-model-2" href="#">Read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 345px; margin-right: 30px;">
+                                <div class="item">
+                                    <div class="our_news_box_content">
+                                        <div class="our_news_box_upper_portion">
+                                            <figure class="mb-0">
+                                                <img src="~/assets/images/our_news_3.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <div class="our_news_box_image_content">
+                                                <h4>23</h4>
+                                                <span class="month">Jan</span>
+                                            </div>
+                                        </div>
+                                        <div class="our_news_box_lower_portion">
+                                            <h5>BİZE ÇÖZÜM DARE ALIGEN SEÇENEĞİ CUMUE</h5>
+                                            <p>Ev zevkinde azarlanmanın acısı, acıda tüy gibi olmasın, kimse esirgemesin.</p>
+                                            <div class="btn_wrapper">
+                                                <a class="read_more_btn text-decoration-none" data-toggle="modal" data-target="#blog-model-3" href="#">Devamını Oku</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item active" style="width: 345px; margin-right: 30px;">
+                                <div class="item">
+                                    <div class="our_news_box_content">
+                                        <div class="our_news_box_upper_portion">
+                                            <figure class="mb-0">
+                                                <img src="~/assets/images/our_news_1.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <div class="our_news_box_image_content">
+                                                <h4>07</h4>
+                                                <span class="month">Mart</span>
+                                            </div>
+                                        </div>
+                                        <div class="our_news_box_lower_portion">
+                                            <h5>ONU HAKLI OLARAK KİM SUÇLAYACAK?</h5>
+                                            <p>Ev zevkinde azarlanmanın acısı, acıda tüy gibi olmasın, kimse esirgemesin.</p>
+                                            <div class="btn_wrapper">
+                                                <a class="read_more_btn text-decoration-none" data-toggle="modal" data-target="#blog-model-1" href="#">Devamını Oku</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item active" style="width: 345px; margin-right: 30px;">
+                                <div class="item">
+                                    <div class="our_news_box_content">
+                                        <div class="our_news_box_upper_portion">
+                                            <figure class="mb-0">
+                                                <img src="~/assets/images/our_news_2.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <div class="our_news_box_image_content">
+                                                <h4>12</h4>
+                                                <span class="month">Nisan</span>
+                                            </div>
+                                        </div>
+                                        <div class="our_news_box_lower_portion">
+                                            <h5>SAÇ OLMAK İSTEYEN HACİMDE TEMSİL EDER</h5>
+                                            <p>Ev zevkinde azarlanmanın acısı, acıda tüy gibi olmasın, kimse esirgemesin.</p>
+                                            <div class="btn_wrapper">
+                                                <a class="read_more_btn text-decoration-none" data-toggle="modal" data-target="#blog-model-2" href="#">Devamını Oku</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item" style="width: 345px; margin-right: 30px;">
+                                <div class="item">
+                                    <div class="our_news_box_content">
+                                        <div class="our_news_box_upper_portion">
+                                            <figure class="mb-0">
+                                                <img src="/assets/images/our_news_3.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <div class="our_news_box_image_content">
+                                                <h4>23</h4>
+                                                <span class="month">Ocak</span>
+                                            </div>
+                                        </div>
+                                        <div class="our_news_box_lower_portion">
+                                            <h5>BİZE ÇÖZÜM DARE ALIGEN SEÇENEĞİ CUMUE</h5>
+                                            <p>Ev zevkinde azarlanmanın acısı, acıda tüy gibi olmasın, kimse esirgemesin.</p>
+                                            <div class="btn_wrapper">
+                                                <a class="read_more_btn text-decoration-none" data-toggle="modal" data-target="#blog-model-3" href="#">Devamını Oku</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 345px; margin-right: 30px;">
+                                <div class="item">
+                                    <div class="our_news_box_content">
+                                        <div class="our_news_box_upper_portion">
+                                            <figure class="mb-0">
+                                                <img src="/assets/images/our_news_1.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <div class="our_news_box_image_content">
+                                                <h4>07</h4>
+                                                <span class="month">Şub</span>
+                                            </div>
+                                        </div>
+                                        <div class="our_news_box_lower_portion">
+                                            <h5>ONU HAKLI OLARAK KİM SUÇLAYACAK?</h5>
+                                            <p>Ev zevkinde azarlanmanın acısı, acıda tüy gibi olmasın, kimse esirgemesin.</p>
+                                            <div class="btn_wrapper">
+                                                <a class="read_more_btn text-decoration-none" data-toggle="modal" data-target="#blog-model-1" href="#">Devamını Oku</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="owl-item cloned" style="width: 345px; margin-right: 30px;">
+                                <div class="item">
+                                    <div class="our_news_box_content">
+                                        <div class="our_news_box_upper_portion">
+                                            <figure class="mb-0">
+                                                <img src="/assets/images/our_news_2.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <div class="our_news_box_image_content">
+                                                <h4>12</h4>
+                                                <span class="month">Mart</span>
+                                            </div>
+                                        </div>
+                                        <div class="our_news_box_lower_portion">
+                                            <h5>ONU HAKLI OLARAK KİM SUÇLAYACAK?</h5>
+                                            <p>Ev zevkinde azarlanmanın acısı, acıda tüy gibi olmasın, kimse esirgemesin.</p>
+                                            <div class="btn_wrapper">
+                                                <a class="read_more_btn text-decoration-none" data-toggle="modal" data-target="#blog-model-2" href="#">Devamını Oku</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>@*<div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>*@<div class="owl-dots disabled"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="middle-portion">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="about_col">
+                            <a href="/Home/Test">
+                                @*<figure>
+                                    <img src="/assets/images/footer_logo.png" alt="" class="img-fluid">
+                                </figure>*@
+                            </a>
+                            <p>baslık.</p>
+                            <ul class="list-unstyled">
+                                <li class="icons"><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                                <li class="icons"><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                                <li class="icons"><a href="#"><i class="fa-brands fa-instagram mr-0" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-lg-block d-none">
+                        <div class="hours_col">
+                            <h6>AÇILIŞ SAATLERİ</h6>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>Pazartesi – Cumartesi</p>
+                                </li>
+                                <li>
+                                    <span>10.00 – 15.45</span>
+                                </li>
+                                <li>
+                                    <p>Pazar – Perşembe</p>
+                                </li>
+                                <li>
+                                    <span>17.30 – 00.00</span>
+                                </li>
+                                <li>
+                                    <p>Cuma – Cumartesi</p>
+                                </li>
+                                <li>
+                                    <span>17.30 – 00.00</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 d-md-block d-none">
+                        <div class="links_col">
+                            <h6>HIZLI BAĞLANTILAR</h6>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="/Home/Hakkimizda">Hakkımızda</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="/Egitim/Index">Eğitimler</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="~/Coach/ORnek">Trainers</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="./pricing.html">Pricing</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-caret-right"></i>
+                                    <a href="~/Home/Contact">İletişim</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="contact_col">
+                            <h6>BİZE ULAŞIN</h6>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>Address:</p>
+                                </li>
+                                <li>
+                                    <span>KADIKÖY-İSTANBUL. TÜRKİYE</span>
+                                </li>
+                                <li>
+                                    <p>Email:</p>
+                                </li>
+                                <li class="mail">
+                                    <a href="" class="text-decoration-none">calalcavlan@gmail.com</a>
+                                </li>
+                                <li>
+                                    <p>Telefon:</p>
+                                </li>
+                                <li class="mb-0">
+                                    <a href="tel:+905542117591" class="text-decoration-none">+90 554 211 7591</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-portion">
+            <div class="copyright col-xl-12">
+                <p>Cavid Celal.</p>
+            </div>
+        </div>
+        <figure class="mb-0 footer_left_icon left_icon">
+            <img src="/assets/images/footer_left_icon.png" alt="" class="img-fluid">
+        </figure>
+        <figure class="mb-0 footer_right_icon right_icon">
+            <img src="/assets/images/footer_right_icon.png" alt="" class="img-fluid">
+        </figure>
+    </section>
+    <!-- BLOG SECTION POPUP -->
+    <div id="blog-model-1" class="modal fade blog-model-con" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa-solid fa-x"></i></span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="blog-box-item mb-0">
+                        <div class="blog-img">
+                            <figure class="mb-0">
+                                <img src="/assets/images/our_news_1.png" alt="blog-img" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="blog-content pl-0 pr-0">
+                            <div class="blog-auteher-title">
+                                <span>kaydeden Cavid Celal</span>
+                                <span class="float-lg-right">Nisan 13, 2023</span>
+                            </div>
+                            <div class="social_icons">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram mr-0" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <h5>ONU HAKLI OLARAK KİM SUÇLAYACAK?</h5>
+                            <p>
+                                Ev zevkinde azarlanmanın acısı, acıda tüy gibi olmasın, kimse esirgemesin.
+                                Zevkten gözü kör olup da dışarı çıkmayan bazı kimseleri azarlamakla, vazifelerini terk edenler kusurludur. Arzın sahibi hiçbir zaman yeryüzüne sahip çıkamayacak ve şimdi de mülke sahip olamayacak. Ama hamileleri mest eden bir unsurdur. Ama oyuncular üzgün. Mülkün üyeleri dışında çikolataya kadar. Nefret alıyor ve özen gösteriyor. Bazen birisi sepete bir sepet koyar. Hüzünlü oklarla yumuşak olan makyaj bile, şimdi tincidunt eros diam'a ihtiyacı olan çikolata fiyonksuzdu.
+                            </p>
+                            <h5 class="contact">CONTACT US</h5>
+                            <h2>BİZE MESAJ GÖNDERİN &amp; TAKIMIMIZA KATIL</h2>
+                            <form class="contact-form blog-model-form">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <input type="text" name="name" id="fname" class="form-placeholder-color" placeholder="Ad">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <input type="tel" name="phone" id="phonenumber" class="form-placeholder-color form_style" placeholder="Tel">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <input type="email" name="email" id="emailaddress" class="form-placeholder-color" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <input type="text" name="sub" id="subject" class="form-placeholder-color form_style" placeholder="Konu">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class=" form-group mb-0">
+                                            <textarea rows="3" name="msg" id="message" class="form-placeholder-color" placeholder="Messaj"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" name="btnsubmit" id="sendbtn">Şimdi gönder<i class="fa-solid fa-play"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blog-model-2" class="modal fade blog-model-con" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa-solid fa-x"></i></span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="blog-box-item mb-0">
+                        <div class="blog-img">
+                            <figure class="mb-0">
+                                <img src="/assets/images/our_news_2.png" alt="blog-img" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="blog-content pl-0 pr-0">
+                            <div class="blog-auteher-title">
+                                <span>kaydeden Cavid Celal</span>
+                                <span class="float-lg-right">Oct 13, 2022</span>
+                            </div>
+                            <div class="social_icons">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram mr-0" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <h5>SAÇ OLMAK İSTEYEN HACİMDE TEMSİL EDER</h5>
+                            <p>
+                                Ev zevkinde azarlanmanın acısı, acıda tüy gibi olmasın, kimse esirgemesin.
+                                Zevkten gözü kör olup da dışarı çıkmayan bazı kimseleri azarlamakla, vazifelerini terk edenler kusurludur. Arzın sahibi hiçbir zaman yeryüzüne sahip çıkamayacak ve şimdi de mülke sahip olamayacak. Ama hamileleri mest eden bir unsurdur. Ama oyuncular üzgün. Mülkün üyeleri dışında çikolataya kadar. Nefret alıyor ve özen gösteriyor. Bazen birisi sepete bir sepet koyar. Hüzünlü oklarla yumuşak olan makyaj bile, şimdi tincidunt eros diam'a ihtiyacı olan çikolata fiyonksuzdu.
+                            </p>
+                            <h5 class="contact">Bize Ulaşın</h5>
+                            <h2>BİZE MESAJ GÖNDERİN &amp; TAKIMIMIZA KATIL</h2>
+                            <form class="contact-form blog-model-form">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <input type="text" name="name" id="blog_sec_fname" class="form-placeholder-color" placeholder="Ad">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <input type="tel" name="phone" id="blog_sec_phonenumber" class="form-placeholder-color form_style" placeholder="Tel">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <input type="email" name="email" id="blog_sec_emailaddress" class="form-placeholder-color" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <input type="text" name="sub" id="blog_sec_subject" class="form-placeholder-color form_style" placeholder="Konu">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class=" form-group mb-0">
+                                            <textarea rows="3" name="msg" id="blog_sec_message" class="form-placeholder-color" placeholder="Messaj"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" name="btnsubmit" id="blog_sec_sendbtn">Send now<i class="fa-solid fa-play"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blog-model-3" class="modal fade blog-model-con" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa-solid fa-x"></i></span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="blog-box-item mb-0">
+                        <div class="blog-img">
+                            <figure class="mb-0">
+                                <img src="/assets/images/our_news_3.png" alt="blog-img" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="blog-content pl-0 pr-0">
+                            <div class="blog-auteher-title">
+                                <span>Kaydeden Cavid Celal</span>
+                                <span class="float-lg-right">Oct 13, 2022</span>
+                            </div>
+                            <div class="social_icons">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram mr-0" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <h5>BİZE ÇÖZÜM DARE ALIGEN SEÇENEĞİ CUMUE</h5>
+                            <p>
+                                Ev zevkinde azarlanmanın acısı, acıda tüy gibi olmasın, kimse esirgemesin.
+                                Zevkten gözü kör olup da dışarı çıkmayan bazı kimseleri azarlamakla, vazifelerini terk edenler kusurludur. Arzın sahibi hiçbir zaman yeryüzüne sahip çıkamayacak ve şimdi de mülke sahip olamayacak. Ama hamileleri mest eden bir unsurdur. Ama oyuncular üzgün. Mülkün üyeleri dışında çikolataya kadar. Nefret alıyor ve özen gösteriyor. Bazen birisi sepete bir sepet koyar. Hüzünlü oklarla yumuşak olan makyaj bile, şimdi tincidunt eros diam'a ihtiyacı olan çikolata fiyonksuzdu.
+                            </p>
+                            <h5 class="contact">CONTACT US</h5>
+                            <h2>BİZE MESAJ GÖNDERİN &amp; TAKIMIMIZA KATIL</h2>
+                            <form class="contact-form blog-model-form">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <input type="text" name="name" id="blog_third_fname" class="form-placeholder-color" placeholder="Ad">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <input type="tel" name="phone" id="blog_third_phonenumber" class="form-placeholder-color form_style" placeholder="Tel">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <input type="email" name="email" id="blog_third_emailaddress" class="form-placeholder-color" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="form-group mb-0">
+                                            <input type="text" name="sub" id="blog_third_subject" class="form-placeholder-color form_style" placeholder="Konu">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class=" form-group mb-0">
+                                            <textarea rows="3" name="msg" id="blog_third_message" class="form-placeholder-color" placeholder="Messaj"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" name="btnsubmit" id="blog_third_sendbtn">Şimdi Gönder<i class="fa-solid fa-play"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Latest compiled JavaScript -->
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/video-popup.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/assets/js/owl.carousel.js"></script>
+    <script src="/assets/js/carousel.js"></script>
+    <script src="/assets/js/video-section.js"></script>
+    <script src="/assets/js/counter.js"></script>
+    <script src="/assets/js/animation.js"></script>
+
+</body>
+</html>

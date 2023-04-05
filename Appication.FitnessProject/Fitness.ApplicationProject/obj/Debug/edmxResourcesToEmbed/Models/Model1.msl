@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbFitnessModelStoreContainer" CdmEntityContainer="DbFitnessEntities">
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="DbFitnessModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="DbFitnessModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="DbFitnessModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="DbFitnessModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DbFitnessModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="DbFitnessModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DbFitnessModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="DbFitnessModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="DbFitnessModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DbFitnessModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblCoach">
+      <EntityTypeMapping TypeName="DbFitnessModel.TblCoach">
+        <MappingFragment StoreEntitySet="TblCoach">
+          <ScalarProperty Name="CEmail" ColumnName="CEmail" />
+          <ScalarProperty Name="CPass" ColumnName="CPass" />
+          <ScalarProperty Name="CAddress" ColumnName="CAddress" />
+          <ScalarProperty Name="CExprience" ColumnName="CExprience" />
+          <ScalarProperty Name="CPhone" ColumnName="CPhone" />
+          <ScalarProperty Name="CDob" ColumnName="CDob" />
+          <ScalarProperty Name="CGen" ColumnName="CGen" />
+          <ScalarProperty Name="CName" ColumnName="CName" />
+          <ScalarProperty Name="CoachId" ColumnName="CoachId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblEgitim">
+      <EntityTypeMapping TypeName="DbFitnessModel.TblEgitim">
+        <MappingFragment StoreEntitySet="TblEgitim">
+          <ScalarProperty Name="EgitimResmi" ColumnName="EgitimResmi" />
+          <ScalarProperty Name="EgitimFiyat" ColumnName="EgitimFiyat" />
+          <ScalarProperty Name="EgitimAdi" ColumnName="EgitimAdi" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="CoachId" ColumnName="CoachId" />
+          <ScalarProperty Name="EgitimKategoriId" ColumnName="EgitimKategoriId" />
+          <ScalarProperty Name="EgitimId" ColumnName="EgitimId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblEgitimKategori">
+      <EntityTypeMapping TypeName="DbFitnessModel.TblEgitimKategori">
+        <MappingFragment StoreEntitySet="TblEgitimKategori">
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="EgitimKategoriAdi" ColumnName="EgitimKategoriAdi" />
+          <ScalarProperty Name="EgitimKategoriId" ColumnName="EgitimKategoriId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblEgitimSepet">
+      <EntityTypeMapping TypeName="DbFitnessModel.TblEgitimSepet">
+        <MappingFragment StoreEntitySet="TblEgitimSepet">
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="CoachId" ColumnName="CoachId" />
+          <ScalarProperty Name="KullaniciId" ColumnName="KullaniciId" />
+          <ScalarProperty Name="EgitimId" ColumnName="EgitimId" />
+          <ScalarProperty Name="EgitimSepetId" ColumnName="EgitimSepetId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblFinance">
+      <EntityTypeMapping TypeName="DbFitnessModel.TblFinance">
+        <MappingFragment StoreEntitySet="TblFinance">
+          <ScalarProperty Name="BAmount" ColumnName="BAmount" />
+          <ScalarProperty Name="BDate" ColumnName="BDate" />
+          <ScalarProperty Name="BPeriod" ColumnName="BPeriod" />
+          <ScalarProperty Name="KullaniciId" ColumnName="KullaniciId" />
+          <ScalarProperty Name="Agent" ColumnName="Agent" />
+          <ScalarProperty Name="BiId" ColumnName="BiId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblKategori">
+      <EntityTypeMapping TypeName="DbFitnessModel.TblKategori">
+        <MappingFragment StoreEntitySet="TblKategori">
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="KategoriAdi" ColumnName="KategoriAdi" />
+          <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblSatislar">
+      <EntityTypeMapping TypeName="DbFitnessModel.TblSatislar">
+        <MappingFragment StoreEntitySet="TblSatislar">
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Adet" ColumnName="Adet" />
+          <ScalarProperty Name="KullaniciId" ColumnName="KullaniciId" />
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="SatisId" ColumnName="SatisId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblSepet">
+      <EntityTypeMapping TypeName="DbFitnessModel.TblSepet">
+        <MappingFragment StoreEntitySet="TblSepet">
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Adet" ColumnName="Adet" />
+          <ScalarProperty Name="KullaniciId" ColumnName="KullaniciId" />
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="SepetId" ColumnName="SepetId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblUrun">
+      <EntityTypeMapping TypeName="DbFitnessModel.TblUrun">
+        <MappingFragment StoreEntitySet="TblUrun">
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="Populer" ColumnName="Populer" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblKullanicii">
+      <EntityTypeMapping TypeName="DbFitnessModel.TblKullanicii">
+        <MappingFragment StoreEntitySet="TblKullanicii">
+          <ScalarProperty Name="Roller" ColumnName="Roller" />
+          <ScalarProperty Name="SifreTekrar" ColumnName="SifreTekrar" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="KullaniciEmail" ColumnName="KullaniciEmail" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="KullaniciId" ColumnName="KullaniciId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

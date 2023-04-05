@@ -1,0 +1,87 @@
+﻿@using Fitness.ApplicationProject.Models.Data
+@model List<TblUrun>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    @using (Html.BeginForm())
+    {
+        <div style="width:60%; float:left">
+            @Html.TextBox("ara", null, new { @class = "form-control", @placeholder = "Ürün adı veya açıklama arayınız" })
+            <div style="float:left">
+                <input type="submit" name="btn" value="Ara" class="btn btn-info" />
+                @if (User.IsInRole("A"))
+                {
+                    <a href="/Urun/Ekle" class="btn btn-primary">Ekle</a>
+                }
+            </div>
+        </div>    
+    }
+</div>
+<br />
+<br />
+<table class="table table-bordered">
+    <tr style="background-color:seagreen">
+        @*<th colspan="2">Ürünler</th>*@
+
+        <section class="product-slider">        
+            <h4 class="product-slider-heading">Ürün Listesi</h4>       
+            <div class="slider-btns">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </tr>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <div class="slider-container" style="background-color:#e8e8e8">              
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">                       
+                <th rowspan="2">
+                    <div class="swiper-slide">                
+                        <div class="product-box">                           
+                            <span class="product-box-offer">-20%</span>                         
+                            <div class="product-img-container">
+                                <div class="product-img">
+                                    <a href="">
+                                        <img class="product-img-front" src="~/assets/images/@item.Resim" alt="" />
+                                        <img class="product-img-back" src="~/assets/images/@item.Resim" alt="" />
+                                    </a>
+                                </div>
+                            </div>                         
+                            <div class="product-box-text">                             
+                                <div class="product-category">
+                                    <span>@item.TblKategori.KategoriAdi</span>
+                                </div>                               
+                                <a href="" class="product-title">
+                                    @item.UrunAdi
+                                </a>
+                                <div class="price-buy">
+                                    <span class="p-price">@item.Fiyat</span>
+                                    @if (User.IsInRole("User"))
+                                    {
+                                        <a href="~/Sepet/SepeteEkle/@item.UrunId" class="btn btn-success">Sepete Ekle</a>
+
+                                    }
+                                    @if (User.IsInRole("A"))
+                                    {
+                                        @Html.ActionLink("Sil", "Sil", new { id = item.UrunId }, new { @class = "btn btn-danger", onclick = "return confirm('Silmek istiuormusunuz?')" });
+                    <a href="/Urun/Guncelle/@item.UrunId" class="btn btn-warning"> Düzenle</a>
+                }
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </th>
+                                 
+                                    </div>
+                                    </div>
+                                    </div>
+            </tr>
+        }
+    </tbody>
+    </section>
+</table>
+

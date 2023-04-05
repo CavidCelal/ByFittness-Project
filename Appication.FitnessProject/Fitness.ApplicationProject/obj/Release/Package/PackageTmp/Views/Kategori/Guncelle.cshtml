@@ -1,0 +1,38 @@
+﻿@model  Fitness.ApplicationProject.Models.Data.TblKategori
+@{
+    ViewBag.Title = "Guncelle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+@using (Html.BeginForm("Guncelle", "Kategori", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.KategoriId)
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <form class="form-group" method="post">
+                    <div style="margin-bottom:15px;">
+                        <label>Ad</label>
+                        <input type="text" name="KategoriAdi"
+                               class="form-control" value="@Model.KategoriAdi" />
+                        @*@Html.LabelFor(x => x.KategoriAdi)
+        @Html.TextBoxFor(x => x.KategoriAdi, new { @class = "form-control" })*@
+                    </div>
+
+                    <div style="margin-bottom:15px;">
+                    
+                            <label>Açıklama</label>
+                            <input type="text" name="Aciklama" class="form-control" value="@Model.Aciklama" />
+                       
+                        @*@Html.LabelFor(x => x.Aciklama)
+        @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })*@
+                    </div>
+                    <button class="btn btn-success">Güncelle</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+
+

@@ -1,0 +1,1115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\90554\Desktop\ByFitt</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="assets/bootstrap/bootstrap.min.css">
+      <publishTime>03/06/2023 19:01:25</publishTime>
+    </File>
+    <File Include="assets/bootstrap/mediaqueries.css">
+      <publishTime>03/06/2023 18:43:01</publishTime>
+    </File>
+    <File Include="assets/bootstrap/owl.carousel.min.css">
+      <publishTime>03/06/2023 18:43:01</publishTime>
+    </File>
+    <File Include="assets/bootstrap/owl.theme.default.min.css">
+      <publishTime>03/06/2023 18:43:01</publishTime>
+    </File>
+    <File Include="assets/bootstrap/style.css">
+      <publishTime>03/06/2023 18:43:01</publishTime>
+    </File>
+    <File Include="assets/css/bootstrap-theme.css">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/css/bootstrap.css">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/css/customize.css">
+      <publishTime>03/06/2023 11:57:24</publishTime>
+    </File>
+    <File Include="assets/css/font-awesome.min.css">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/css/global.css">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/css/layers.css">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/css/mediaqueries.css">
+      <publishTime>03/06/2023 18:47:34</publishTime>
+    </File>
+    <File Include="assets/css/owl.carousel.css">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/css/owl.carousel.min.css">
+      <publishTime>03/06/2023 18:47:34</publishTime>
+    </File>
+    <File Include="assets/css/owl.theme.default.min.css">
+      <publishTime>03/06/2023 18:47:34</publishTime>
+    </File>
+    <File Include="assets/css/plugins.css">
+      <publishTime>03/06/2023 11:57:34</publishTime>
+    </File>
+    <File Include="assets/css/responsive.css">
+      <publishTime>03/06/2023 11:57:31</publishTime>
+    </File>
+    <File Include="assets/css/settings.css">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/css/simple-line-icons.css">
+      <publishTime>03/14/2023 11:50:32</publishTime>
+    </File>
+    <File Include="assets/css/style.css">
+      <publishTime>03/14/2023 11:54:53</publishTime>
+    </File>
+    <File Include="assets/Image/AleBrotto_Person_in_meditation_inside_a_room_universe_backgroun_67012d55-b1a5-4c9d-b961-1a7655394631.png">
+      <publishTime>03/09/2023 02:25:27</publishTime>
+    </File>
+    <File Include="assets/Image/Background.jpg">
+      <publishTime>02/21/2023 14:10:16</publishTime>
+    </File>
+    <File Include="assets/Image/Background2.jpeg">
+      <publishTime>02/21/2023 18:01:22</publishTime>
+    </File>
+    <File Include="assets/Image/Cavid_Arnold_schwarzenegger_in_the_gym_at_night_with_lights_mov_b349ef19-e8fb-4052-807d-3a01d48c7f6a.png">
+      <publishTime>03/09/2023 02:25:25</publishTime>
+    </File>
+    <File Include="assets/Image/Cavid_cinema_atmosphere_in_the_gym_night_in_the_light_of_a_lamp_4a4d043a-f26e-4048-9bcc-dd8956c633f4.png">
+      <publishTime>03/09/2023 02:33:14</publishTime>
+    </File>
+    <File Include="assets/Image/Cavid_cinema_atmosphere_in_the_gym_night_in_the_light_of_a_lamp_dcad94e3-0bf9-462c-900f-4ed3fbef6272.png">
+      <publishTime>03/09/2023 02:25:23</publishTime>
+    </File>
+    <File Include="assets/Image/Cavid_realistic_cabin_a-frame_c0a3fd14-d173-4304-84cf-14c1ff3bb016.png">
+      <publishTime>03/09/2023 02:33:06</publishTime>
+    </File>
+    <File Include="assets/Image/GYM-PC-Wallpaper-HD.jpg">
+      <publishTime>02/21/2023 13:48:19</publishTime>
+    </File>
+    <File Include="assets/Image/ocr.png">
+      <publishTime>02/21/2023 18:27:49</publishTime>
+    </File>
+    <File Include="assets/images/0052c02c-f15a-4e15-b348-30cd1d851d7b.png">
+      <publishTime>02/24/2023 12:10:15</publishTime>
+    </File>
+    <File Include="assets/images/27ec4392-7499-436d-a50b-6d90915c379e.png">
+      <publishTime>02/24/2023 12:10:15</publishTime>
+    </File>
+    <File Include="assets/images/28f113cf1a4d78d3bca2650d40a8382b.jpg">
+      <publishTime>03/19/2023 21:39:11</publishTime>
+    </File>
+    <File Include="assets/images/2abce36e50d0b4e1fc3f57139fab668f.jpg">
+      <publishTime>03/19/2023 21:32:42</publishTime>
+    </File>
+    <File Include="assets/images/3272f4e1-4685-4bb1-81f3-4c8cce3363cb.png">
+      <publishTime>02/24/2023 12:10:15</publishTime>
+    </File>
+    <File Include="assets/images/3ca841d2-cb0b-40f7-b07a-736c7b0136fa.png">
+      <publishTime>02/24/2023 12:10:15</publishTime>
+    </File>
+    <File Include="assets/images/5002539220_X_01.heic">
+      <publishTime>03/19/2023 21:22:23</publishTime>
+    </File>
+    <File Include="assets/images/7d983e00-f4a6-4eea-a970-8f8ecf9ba28d.png">
+      <publishTime>02/24/2023 12:10:15</publishTime>
+    </File>
+    <File Include="assets/images/8eafa9d0-a4f6-4110-a3ce-63a4bb23fd0e.png">
+      <publishTime>02/24/2023 12:10:15</publishTime>
+    </File>
+    <File Include="assets/images/aboutus_background.jpg">
+      <publishTime>03/09/2023 00:49:58</publishTime>
+    </File>
+    <File Include="assets/images/aboutus_box_apostrophy.png">
+      <publishTime>03/09/2023 00:59:26</publishTime>
+    </File>
+    <File Include="assets/images/aboutus_image.png">
+      <publishTime>03/09/2023 00:49:58</publishTime>
+    </File>
+    <File Include="assets/images/about_image.jpg">
+      <publishTime>03/09/2023 00:59:23</publishTime>
+    </File>
+    <File Include="assets/images/about_subbanner_background.png">
+      <publishTime>03/09/2023 00:59:23</publishTime>
+    </File>
+    <File Include="assets/images/aerobic_class.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/banner_background.jpg">
+      <publishTime>03/09/2023 00:49:58</publishTime>
+    </File>
+    <File Include="assets/images/banner_video_icon.png">
+      <publishTime>03/09/2023 00:49:58</publishTime>
+    </File>
+    <File Include="assets/images/banner_white_line.png">
+      <publishTime>03/09/2023 00:49:58</publishTime>
+    </File>
+    <File Include="assets/images/bath-icon.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/bmi-bg.png">
+      <publishTime>03/06/2023 16:43:24</publishTime>
+    </File>
+    <File Include="assets/images/body_building.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/boxing-icon.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/calories.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/cardio-icon.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/cardio-run-icon.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/cart-one.png">
+      <publishTime>03/08/2023 20:16:07</publishTime>
+    </File>
+    <File Include="assets/images/cart-two.png">
+      <publishTime>03/08/2023 20:15:59</publishTime>
+    </File>
+    <File Include="assets/images/Cavid_As_you_look_closer_you_notice_the_details_of_the_terrain._d8c03d88-18e2-4533-ba5f-4bfde7108205.png">
+      <publishTime>03/13/2023 13:54:58</publishTime>
+    </File>
+    <File Include="assets/images/Cavid_a_Fitness_picture_for_the_website_background_e47dba8e-9876-4446-83e2-dd10574c0224.png">
+      <publishTime>03/19/2023 16:51:33</publishTime>
+    </File>
+    <File Include="assets/images/Cavid_GymCinema_AtmosphereLights_c7aea74a-a68e-4538-82c9-cd77a2d66d9a.png">
+      <publishTime>03/13/2023 13:54:50</publishTime>
+    </File>
+    <File Include="assets/images/choose_us_1 %281%29.png">
+      <publishTime>03/09/2023 00:59:28</publishTime>
+    </File>
+    <File Include="assets/images/choose_us_1.png">
+      <publishTime>03/09/2023 00:49:58</publishTime>
+    </File>
+    <File Include="assets/images/choose_us_2 %281%29.png">
+      <publishTime>03/09/2023 00:59:28</publishTime>
+    </File>
+    <File Include="assets/images/choose_us_2.png">
+      <publishTime>03/09/2023 00:49:58</publishTime>
+    </File>
+    <File Include="assets/images/choose_us_3 %281%29.png">
+      <publishTime>03/09/2023 00:59:28</publishTime>
+    </File>
+    <File Include="assets/images/choose_us_3.png">
+      <publishTime>03/09/2023 00:49:58</publishTime>
+    </File>
+    <File Include="assets/images/choose_us_4.png">
+      <publishTime>03/09/2023 00:49:58</publishTime>
+    </File>
+    <File Include="assets/images/contacts_find_us_1.png">
+      <publishTime>03/08/2023 23:55:10</publishTime>
+    </File>
+    <File Include="assets/images/contacts_find_us_2.png">
+      <publishTime>03/08/2023 23:55:13</publishTime>
+    </File>
+    <File Include="assets/images/contacts_find_us_3.png">
+      <publishTime>03/08/2023 23:55:17</publishTime>
+    </File>
+    <File Include="assets/images/contacts_find_us_email.png">
+      <publishTime>03/08/2023 23:55:25</publishTime>
+    </File>
+    <File Include="assets/images/contacts_find_us_location.png">
+      <publishTime>03/08/2023 23:55:21</publishTime>
+    </File>
+    <File Include="assets/images/contacts_find_us_phone.png">
+      <publishTime>03/08/2023 23:55:23</publishTime>
+    </File>
+    <File Include="assets/images/contact_subbanner_background.png">
+      <publishTime>03/08/2023 23:55:28</publishTime>
+    </File>
+    <File Include="assets/images/contact_us_background %281%29.jpg">
+      <publishTime>03/08/2023 23:56:04</publishTime>
+    </File>
+    <File Include="assets/images/contact_us_background.jpg">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/contact_us_image %281%29.png">
+      <publishTime>03/08/2023 23:56:06</publishTime>
+    </File>
+    <File Include="assets/images/contact_us_image.png">
+      <publishTime>03/06/2023 18:43:15</publishTime>
+    </File>
+    <File Include="assets/images/creatine_web.jpg">
+      <publishTime>03/19/2023 21:32:42</publishTime>
+    </File>
+    <File Include="assets/images/curl-ups.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/cytogainer-6-lbs-chocolate-malt.jpg">
+      <publishTime>03/19/2023 21:22:48</publishTime>
+    </File>
+    <File Include="assets/images/dumball-icon.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/ER8BLTLXsAEaGIS.jpg">
+      <publishTime>03/19/2023 21:22:42</publishTime>
+    </File>
+    <File Include="assets/images/facilities_1.jpg">
+      <publishTime>03/09/2023 00:50:03</publishTime>
+    </File>
+    <File Include="assets/images/facilities_2.jpg">
+      <publishTime>03/09/2023 00:50:03</publishTime>
+    </File>
+    <File Include="assets/images/facilities_3.jpg">
+      <publishTime>03/09/2023 00:50:03</publishTime>
+    </File>
+    <File Include="assets/images/facilities_4.jpg">
+      <publishTime>03/09/2023 00:50:03</publishTime>
+    </File>
+    <File Include="assets/images/facilities_icon_1.png">
+      <publishTime>03/09/2023 00:50:03</publishTime>
+    </File>
+    <File Include="assets/images/facilities_icon_2.png">
+      <publishTime>03/09/2023 00:50:03</publishTime>
+    </File>
+    <File Include="assets/images/facilities_icon_3.png">
+      <publishTime>03/09/2023 00:50:03</publishTime>
+    </File>
+    <File Include="assets/images/facilities_icon_4.png">
+      <publishTime>03/09/2023 00:50:03</publishTime>
+    </File>
+    <File Include="assets/images/footer-boxing-img.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/footer_left_icon %281%29.png">
+      <publishTime>03/08/2023 23:55:52</publishTime>
+    </File>
+    <File Include="assets/images/footer_left_icon %282%29.png">
+      <publishTime>03/09/2023 00:50:03</publishTime>
+    </File>
+    <File Include="assets/images/footer_left_icon %283%29.png">
+      <publishTime>03/09/2023 00:59:33</publishTime>
+    </File>
+    <File Include="assets/images/footer_left_icon %284%29.png">
+      <publishTime>03/09/2023 01:03:38</publishTime>
+    </File>
+    <File Include="assets/images/footer_left_icon.png">
+      <publishTime>03/06/2023 18:43:44</publishTime>
+    </File>
+    <File Include="assets/images/footer_logo %281%29.png">
+      <publishTime>03/09/2023 00:50:03</publishTime>
+    </File>
+    <File Include="assets/images/footer_logo.png">
+      <publishTime>03/06/2023 18:43:15</publishTime>
+    </File>
+    <File Include="assets/images/footer_right_icon %281%29.png">
+      <publishTime>03/09/2023 00:59:33</publishTime>
+    </File>
+    <File Include="assets/images/footer_right_icon %282%29.png">
+      <publishTime>03/09/2023 00:59:33</publishTime>
+    </File>
+    <File Include="assets/images/footer_right_icon %283%29.png">
+      <publishTime>03/09/2023 01:03:38</publishTime>
+    </File>
+    <File Include="assets/images/footer_right_icon %284%29.png">
+      <publishTime>03/09/2023 01:04:49</publishTime>
+    </File>
+    <File Include="assets/images/footer_right_icon.png">
+      <publishTime>03/06/2023 18:43:15</publishTime>
+    </File>
+    <File Include="assets/images/girl-fit_bg.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/gym-member.png">
+      <publishTime>03/06/2023 17:22:34</publishTime>
+    </File>
+    <File Include="assets/images/gym-slider-img-2.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/gym-slider-img_1.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/home-1_logo.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/home_1_slider_1.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/Jo_Achim_girl_riding_an_arabian_horse_in_the_middle_of_the_dese_dbfe0ec4-9036-4bff-b8ac-b265e756224e.png">
+      <publishTime>03/13/2023 13:55:04</publishTime>
+    </File>
+    <File Include="assets/images/karate-icon.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/karte-icon.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/news-one-img.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/news-two-img.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/our_news_1 %281%29.png">
+      <publishTime>03/09/2023 00:50:04</publishTime>
+    </File>
+    <File Include="assets/images/our_news_1.png">
+      <publishTime>03/06/2023 18:43:15</publishTime>
+    </File>
+    <File Include="assets/images/our_news_2 %281%29.png">
+      <publishTime>03/09/2023 00:50:04</publishTime>
+    </File>
+    <File Include="assets/images/our_news_2.png">
+      <publishTime>03/06/2023 18:43:15</publishTime>
+    </File>
+    <File Include="assets/images/our_news_3 %281%29.png">
+      <publishTime>03/09/2023 00:50:04</publishTime>
+    </File>
+    <File Include="assets/images/our_news_3 %282%29.png">
+      <publishTime>03/09/2023 00:59:33</publishTime>
+    </File>
+    <File Include="assets/images/our_news_3.png">
+      <publishTime>03/06/2023 18:43:15</publishTime>
+    </File>
+    <File Include="assets/images/our_services_background.png">
+      <publishTime>03/09/2023 00:50:04</publishTime>
+    </File>
+    <File Include="assets/images/our_services_left_icon.png">
+      <publishTime>03/09/2023 00:50:04</publishTime>
+    </File>
+    <File Include="assets/images/our_services_right_icon.png">
+      <publishTime>03/09/2023 00:50:04</publishTime>
+    </File>
+    <File Include="assets/images/package-1.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/package-2.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/package-3.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/png-clipart-bodybuilding-graphics-fitness-centre-logo-bodybuilding-physical-fitness-logo %281%29.png">
+      <publishTime>03/16/2023 20:30:07</publishTime>
+    </File>
+    <File Include="assets/images/pricing_tables_1.png">
+      <publishTime>03/09/2023 00:50:04</publishTime>
+    </File>
+    <File Include="assets/images/pricing_tables_2.png">
+      <publishTime>03/09/2023 00:50:04</publishTime>
+    </File>
+    <File Include="assets/images/pricing_tables_3.png">
+      <publishTime>03/09/2023 00:50:04</publishTime>
+    </File>
+    <File Include="assets/images/product-1.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/product-2.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/product-3.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/product-4.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/quote_background.png">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/quote_left_icon.png">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/quote_right_icon.png">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/skiping-icon.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/sprite.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/stats_background.png">
+      <publishTime>03/09/2023 01:03:38</publishTime>
+    </File>
+    <File Include="assets/images/stats_left_icon.png">
+      <publishTime>03/09/2023 01:03:38</publishTime>
+    </File>
+    <File Include="assets/images/story-banner.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/sven-mieke-MsCgmHuirDo-unsplash.jpg">
+      <publishTime>03/23/2023 00:37:52</publishTime>
+    </File>
+    <File Include="assets/images/team-bg.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/team_member_1 %281%29.png">
+      <publishTime>03/09/2023 00:50:05</publishTime>
+    </File>
+    <File Include="assets/images/team_member_1.png">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/team_member_2 %281%29.png">
+      <publishTime>03/09/2023 00:50:05</publishTime>
+    </File>
+    <File Include="assets/images/team_member_2.png">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/team_member_3 %281%29.png">
+      <publishTime>03/09/2023 00:50:05</publishTime>
+    </File>
+    <File Include="assets/images/team_member_3.png">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/team_member_4.png">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/team_member_5.png">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/team_member_6.png">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/team_member_background.png">
+      <publishTime>03/09/2023 00:50:06</publishTime>
+    </File>
+    <File Include="assets/images/team_member_left_icon.png">
+      <publishTime>03/09/2023 00:50:06</publishTime>
+    </File>
+    <File Include="assets/images/team_member_right_icon.png">
+      <publishTime>03/09/2023 00:50:06</publishTime>
+    </File>
+    <File Include="assets/images/testimonials_apostrophy.png">
+      <publishTime>03/09/2023 00:50:06</publishTime>
+    </File>
+    <File Include="assets/images/testimonials_background.jpg">
+      <publishTime>03/09/2023 00:50:06</publishTime>
+    </File>
+    <File Include="assets/images/testimonials_image.png">
+      <publishTime>03/09/2023 00:50:06</publishTime>
+    </File>
+    <File Include="assets/images/testimonials_white_line.png">
+      <publishTime>03/09/2023 00:50:06</publishTime>
+    </File>
+    <File Include="assets/images/trademil.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/trainers_subbanner_background.png">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/trainers_success_image.png">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/video_img.jpg">
+      <publishTime>03/09/2023 00:59:33</publishTime>
+    </File>
+    <File Include="assets/images/video_img_icon.png">
+      <publishTime>03/09/2023 00:59:33</publishTime>
+    </File>
+    <File Include="assets/images/watch-icon.png">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/images/Workout-Wallpaper-1920x1080-1.jpg">
+      <publishTime>02/23/2023 12:21:33</publishTime>
+    </File>
+    <File Include="assets/images/xtreme_fitness_logo %281%29.png">
+      <publishTime>03/09/2023 00:50:06</publishTime>
+    </File>
+    <File Include="assets/images/xtreme_fitness_logo.png">
+      <publishTime>03/06/2023 18:43:14</publishTime>
+    </File>
+    <File Include="assets/images/yoga_programs.jpg">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/js/animation.js">
+      <publishTime>03/06/2023 18:42:19</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap.js">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap.min.js">
+      <publishTime>03/06/2023 18:42:19</publishTime>
+    </File>
+    <File Include="assets/js/carousel.js">
+      <publishTime>03/06/2023 18:42:19</publishTime>
+    </File>
+    <File Include="assets/js/counter.js">
+      <publishTime>03/06/2023 18:42:19</publishTime>
+    </File>
+    <File Include="assets/js/custom.js">
+      <publishTime>03/06/2023 18:42:19</publishTime>
+    </File>
+    <File Include="assets/js/jquery-1.11.3.min.js">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/js/jquery-3.6.0.min.js">
+      <publishTime>03/06/2023 18:42:19</publishTime>
+    </File>
+    <File Include="assets/js/jquery.revolution.js">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/js/jquery.themepunch.revolution.min.js">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/js/jquery.themepunch.tools.min.js">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/js/js/theme-option/style-switcher/assets/js/jquery.cookie.js">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/js/js/theme-option/style-switcher/assets/js/style.switcher.js">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/js/less.js">
+      <publishTime>02/23/2023 12:03:54</publishTime>
+    </File>
+    <File Include="assets/js/owl.carousel.js">
+      <publishTime>03/06/2023 18:42:21</publishTime>
+    </File>
+    <File Include="assets/js/popper.min.js">
+      <publishTime>03/06/2023 18:42:21</publishTime>
+    </File>
+    <File Include="assets/js/site.js">
+      <publishTime>03/14/2023 12:01:05</publishTime>
+    </File>
+    <File Include="assets/js/video-popup.js">
+      <publishTime>03/06/2023 18:42:21</publishTime>
+    </File>
+    <File Include="assets/js/video-section.js">
+      <publishTime>03/06/2023 18:42:21</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-grid.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-grid.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-grid.min.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-grid.min.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-grid.rtl.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-grid.rtl.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-grid.rtl.min.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-grid.rtl.min.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-reboot.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-reboot.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-reboot.min.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-reboot.min.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-reboot.rtl.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-reboot.rtl.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-reboot.rtl.min.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-reboot.rtl.min.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-utilities.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-utilities.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-utilities.min.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-utilities.min.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-utilities.rtl.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-utilities.rtl.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-utilities.rtl.min.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap-utilities.rtl.min.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap.css.map">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap.min.css">
+      <publishTime>02/21/2023 13:28:00</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap.min.css.map">
+      <publishTime>02/21/2023 13:28:01</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap.rtl.css">
+      <publishTime>02/21/2023 13:28:01</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap.rtl.css.map">
+      <publishTime>02/21/2023 13:28:01</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap.rtl.min.css">
+      <publishTime>02/21/2023 13:28:01</publishTime>
+    </File>
+    <File Include="assets/Lib/css/bootstrap.rtl.min.css.map">
+      <publishTime>02/21/2023 13:28:01</publishTime>
+    </File>
+    <File Include="assets/Lib/css/style.css">
+      <publishTime>03/08/2023 19:41:43</publishTime>
+    </File>
+    <File Include="assets/Lib/js/bootstrap.bundle.js">
+      <publishTime>02/21/2023 13:22:36</publishTime>
+    </File>
+    <File Include="assets/Lib/js/bootstrap.bundle.js.map">
+      <publishTime>02/21/2023 13:22:36</publishTime>
+    </File>
+    <File Include="assets/Lib/js/bootstrap.bundle.min.js">
+      <publishTime>02/21/2023 13:22:36</publishTime>
+    </File>
+    <File Include="assets/Lib/js/bootstrap.bundle.min.js.map">
+      <publishTime>02/21/2023 13:22:36</publishTime>
+    </File>
+    <File Include="assets/Lib/js/bootstrap.esm.js">
+      <publishTime>02/21/2023 13:22:36</publishTime>
+    </File>
+    <File Include="assets/Lib/js/bootstrap.esm.js.map">
+      <publishTime>02/21/2023 13:22:36</publishTime>
+    </File>
+    <File Include="assets/Lib/js/bootstrap.esm.min.js">
+      <publishTime>02/21/2023 13:22:36</publishTime>
+    </File>
+    <File Include="assets/Lib/js/bootstrap.esm.min.js.map">
+      <publishTime>02/21/2023 13:22:36</publishTime>
+    </File>
+    <File Include="assets/Lib/js/bootstrap.js">
+      <publishTime>02/21/2023 13:22:36</publishTime>
+    </File>
+    <File Include="assets/Lib/js/bootstrap.js.map">
+      <publishTime>02/21/2023 13:22:36</publishTime>
+    </File>
+    <File Include="assets/Lib/js/bootstrap.min.js">
+      <publishTime>02/21/2023 13:22:36</publishTime>
+    </File>
+    <File Include="assets/Lib/js/bootstrap.min.js.map">
+      <publishTime>02/21/2023 13:22:36</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/23/2017 13:15:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 13:15:20</publishTime>
+    </File>
+    <File Include="bin/Fitness.ApplicationProject.dll">
+      <publishTime>03/29/2023 12:29:20</publishTime>
+    </File>
+    <File Include="bin/Fitness.ApplicationProject.pdb">
+      <publishTime>03/29/2023 12:29:20</publishTime>
+    </File>
+    <File Include="bin/Grpc.Core.Api.dll">
+      <publishTime>01/11/2023 03:19:12</publishTime>
+    </File>
+    <File Include="bin/Grpc.Core.Api.pdb">
+      <publishTime>01/10/2023 01:21:10</publishTime>
+    </File>
+    <File Include="bin/Grpc.Core.dll">
+      <publishTime>01/11/2023 03:19:06</publishTime>
+    </File>
+    <File Include="bin/Grpc.Core.pdb">
+      <publishTime>01/10/2023 01:21:18</publishTime>
+    </File>
+    <File Include="bin/grpc_csharp_ext.x64.dll">
+      <publishTime>01/11/2023 03:19:06</publishTime>
+    </File>
+    <File Include="bin/grpc_csharp_ext.x86.dll">
+      <publishTime>01/11/2023 03:19:06</publishTime>
+    </File>
+    <File Include="bin/libgrpc_csharp_ext.x64.dylib">
+      <publishTime>01/10/2023 01:20:26</publishTime>
+    </File>
+    <File Include="bin/libgrpc_csharp_ext.x64.so">
+      <publishTime>01/10/2023 01:20:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/05/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/22/2019 01:06:16</publishTime>
+    </File>
+    <File Include="bin/PagedList.dll">
+      <publishTime>09/30/2013 20:36:38</publishTime>
+    </File>
+    <File Include="bin/PagedList.Mvc.dll">
+      <publishTime>09/30/2013 21:15:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 12:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 12:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 12:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 18:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/05/2016 18:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/16/2018 03:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>11/05/2016 18:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/05/2016 18:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 18:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 18:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>11/05/2016 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 18:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/16/2018 03:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 18:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 18:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 18:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/05/2016 18:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>11/05/2016 18:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/05/2016 18:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 18:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/05/2016 18:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 12:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 12:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 12:18:16</publishTime>
+    </File>
+    <File Include="bin/System.Buffers.dll">
+      <publishTime>07/19/2017 13:01:28</publishTime>
+    </File>
+    <File Include="bin/System.Memory.dll">
+      <publishTime>04/17/2019 19:24:34</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/28/2018 13:00:36</publishTime>
+    </File>
+    <File Include="bin/System.Numerics.Vectors.dll">
+      <publishTime>07/19/2017 13:01:36</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>09/18/2018 22:38:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/28/2018 13:01:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/28/2018 13:02:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/28/2018 12:59:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/28/2018 13:00:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="Content/PagedList.css">
+      <publishTime>03/03/2023 16:50:47</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>02/21/2023 15:56:04</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/21/2023 13:05:02</publishTime>
+    </File>
+    <File Include="grpc_csharp_ext.x64.dll">
+      <publishTime>01/11/2023 03:19:06</publishTime>
+    </File>
+    <File Include="grpc_csharp_ext.x86.dll">
+      <publishTime>01/11/2023 03:19:06</publishTime>
+    </File>
+    <File Include="Jquery/jquery-3.6.1.min.js">
+      <publishTime>02/23/2023 20:01:24</publishTime>
+    </File>
+    <File Include="Jquery/Main.js">
+      <publishTime>03/12/2023 18:02:16</publishTime>
+    </File>
+    <File Include="Jquery/MyJavaScriptFile.js">
+      <publishTime>02/23/2023 20:01:25</publishTime>
+    </File>
+    <File Include="libgrpc_csharp_ext.x64.dylib">
+      <publishTime>01/10/2023 01:20:26</publishTime>
+    </File>
+    <File Include="libgrpc_csharp_ext.x64.so">
+      <publishTime>01/10/2023 01:20:24</publishTime>
+    </File>
+    <File Include="Models/Data/Model1.edmx.diagram">
+      <publishTime>03/23/2023 14:31:45</publishTime>
+    </File>
+    <File Include="MyJs/angular.min.js">
+      <publishTime>02/21/2023 16:07:01</publishTime>
+    </File>
+    <File Include="MyJs/CommonFactory.js">
+      <publishTime>02/21/2023 16:07:01</publishTime>
+    </File>
+    <File Include="MyJs/CommonService.js">
+      <publishTime>02/21/2023 16:07:01</publishTime>
+    </File>
+    <File Include="MyJs/Main.js">
+      <publishTime>02/21/2023 16:07:01</publishTime>
+    </File>
+    <File Include="MyJs/PersonSercive.js">
+      <publishTime>02/21/2023 16:07:01</publishTime>
+    </File>
+    <File Include="MyJs/ProjectService.js">
+      <publishTime>02/21/2023 16:07:01</publishTime>
+    </File>
+    <File Include="Views/Account/Guncelle.cshtml">
+      <publishTime>03/24/2023 13:53:16</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>03/24/2023 13:53:01</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>03/24/2023 13:50:25</publishTime>
+    </File>
+    <File Include="Views/Coach/ORnek.cshtml">
+      <publishTime>03/24/2023 13:49:21</publishTime>
+    </File>
+    <File Include="Views/Egitim/Ekle.cshtml">
+      <publishTime>03/22/2023 00:13:29</publishTime>
+    </File>
+    <File Include="Views/Egitim/Guncelle.cshtml">
+      <publishTime>03/22/2023 00:22:26</publishTime>
+    </File>
+    <File Include="Views/Egitim/Index.cshtml">
+      <publishTime>03/24/2023 13:49:11</publishTime>
+    </File>
+    <File Include="Views/EgitimKategori/Ekle.cshtml">
+      <publishTime>03/13/2023 23:39:16</publishTime>
+    </File>
+    <File Include="Views/EgitimKategori/Guncelle.cshtml">
+      <publishTime>03/22/2023 00:36:22</publishTime>
+    </File>
+    <File Include="Views/EgitimKategori/Index.cshtml">
+      <publishTime>03/22/2023 00:32:46</publishTime>
+    </File>
+    <File Include="Views/ErrorFound/Index.cshtml">
+      <publishTime>03/17/2023 00:13:06</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>03/23/2023 01:20:26</publishTime>
+    </File>
+    <File Include="Views/Home/Hakkimizda.cshtml">
+      <publishTime>03/23/2023 14:38:39</publishTime>
+    </File>
+    <File Include="Views/Home/Test.cshtml">
+      <publishTime>03/23/2023 01:18:58</publishTime>
+    </File>
+    <File Include="Views/Istatistik/Index.cshtml">
+      <publishTime>03/11/2023 17:42:56</publishTime>
+    </File>
+    <File Include="Views/Kategori/Ekle.cshtml">
+      <publishTime>03/09/2023 19:56:15</publishTime>
+    </File>
+    <File Include="Views/Kategori/Guncelle.cshtml">
+      <publishTime>03/21/2023 23:45:00</publishTime>
+    </File>
+    <File Include="Views/Kategori/Index.cshtml">
+      <publishTime>03/21/2023 21:54:19</publishTime>
+    </File>
+    <File Include="Views/Kullanici/SifreReset.cshtml">
+      <publishTime>03/09/2023 19:56:15</publishTime>
+    </File>
+    <File Include="Views/Satis/Address.cshtml">
+      <publishTime>03/23/2023 01:03:38</publishTime>
+    </File>
+    <File Include="Views/Satis/EgitimIslem.cshtml">
+      <publishTime>03/23/2023 00:22:19</publishTime>
+    </File>
+    <File Include="Views/Satis/EgitimSatinAl.cshtml">
+      <publishTime>03/24/2023 13:46:37</publishTime>
+    </File>
+    <File Include="Views/Satis/HepsiniSatinAl.cshtml">
+      <publishTime>03/24/2023 13:42:44</publishTime>
+    </File>
+    <File Include="Views/Satis/Index.cshtml">
+      <publishTime>03/24/2023 13:42:07</publishTime>
+    </File>
+    <File Include="Views/Satis/islem.cshtml">
+      <publishTime>03/24/2023 13:40:18</publishTime>
+    </File>
+    <File Include="Views/Satis/SatinAl.cshtml">
+      <publishTime>03/24/2023 13:40:06</publishTime>
+    </File>
+    <File Include="Views/Sepet/Index.cshtml">
+      <publishTime>03/24/2023 13:39:50</publishTime>
+    </File>
+    <File Include="Views/Sepet/SepetCount.cshtml">
+      <publishTime>03/01/2023 14:20:08</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>03/23/2023 01:20:22</publishTime>
+    </File>
+    <File Include="Views/Urun/Ekle.cshtml">
+      <publishTime>03/09/2023 19:56:15</publishTime>
+    </File>
+    <File Include="Views/Urun/Guncelle.cshtml">
+      <publishTime>03/21/2023 23:42:33</publishTime>
+    </File>
+    <File Include="Views/Urun/Index.cshtml">
+      <publishTime>03/24/2023 13:44:07</publishTime>
+    </File>
+    <File Include="Views/Urun/KritikStok.cshtml">
+      <publishTime>03/09/2023 19:56:15</publishTime>
+    </File>
+    <File Include="Views/Urun/StokCount.cshtml">
+      <publishTime>03/09/2023 19:56:08</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>02/21/2023 13:05:01</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>02/23/2023 21:17:27</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/29/2023 12:29:22</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

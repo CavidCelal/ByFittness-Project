@@ -1,0 +1,565 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{954F83DF-7A67-4BF2-9A6A-9F39424CFE61}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fitness.ApplicationProject</RootNamespace>
+    <AssemblyName>Fitness.ApplicationProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44312</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Grpc.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grpc.Core.2.46.6\lib\net45\Grpc.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Grpc.Core.Api, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grpc.Core.Api.2.46.6\lib\net45\Grpc.Core.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\images\28f113cf1a4d78d3bca2650d40a8382b.jpg" />
+    <Content Include="assets\images\2abce36e50d0b4e1fc3f57139fab668f.jpg" />
+    <Content Include="assets\images\770d1765095871.5ae8aa04dd783.jpg" />
+    <Content Include="assets\images\Cavid_As_you_look_closer_you_notice_the_details_of_the_terrain._d8c03d88-18e2-4533-ba5f-4bfde7108205.png" />
+    <Content Include="assets\images\Cavid_a_Fitness_picture_for_the_website_background_e47dba8e-9876-4446-83e2-dd10574c0224.png" />
+    <Content Include="assets\images\Cavid_GymCinema_AtmosphereLights_c7aea74a-a68e-4538-82c9-cd77a2d66d9a.png" />
+    <Content Include="assets\bootstrap\bootstrap.min.css" />
+    <Content Include="assets\bootstrap\mediaqueries.css" />
+    <Content Include="assets\bootstrap\owl.carousel.min.css" />
+    <Content Include="assets\bootstrap\owl.theme.default.min.css" />
+    <Content Include="assets\bootstrap\style.css" />
+    <Content Include="assets\css\bootstrap-theme.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\customize.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\global.css" />
+    <Content Include="assets\css\layers.css" />
+    <Content Include="assets\css\mediaqueries.css" />
+    <Content Include="assets\css\owl.carousel.css" />
+    <Content Include="assets\css\owl.carousel.min.css" />
+    <Content Include="assets\css\owl.theme.default.min.css" />
+    <Content Include="assets\css\plugins.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\settings.css" />
+    <Content Include="assets\css\simple-line-icons.css" />
+    <Content Include="assets\images\aboutus_background.jpg" />
+    <Content Include="assets\images\aboutus_box_apostrophy.png" />
+    <Content Include="assets\images\aboutus_image.png" />
+    <Content Include="assets\images\about_image.jpg" />
+    <Content Include="assets\images\about_subbanner_background.png" />
+    <Content Include="assets\images\aerobic_class.jpg" />
+    <Content Include="assets\images\banner_background.jpg" />
+    <Content Include="assets\images\banner_video_icon.png" />
+    <Content Include="assets\images\banner_white_line.png" />
+    <Content Include="assets\images\bath-icon.png" />
+    <Content Include="assets\images\bmi-bg.png" />
+    <Content Include="assets\images\body_building.jpg" />
+    <Content Include="assets\images\boxing-icon.png" />
+    <Content Include="assets\images\calories.png" />
+    <Content Include="assets\images\cardio-icon.png" />
+    <Content Include="assets\images\cardio-run-icon.png" />
+    <Content Include="assets\images\cart-one.png" />
+    <Content Include="assets\images\cart-two.png" />
+    <Content Include="assets\images\choose_us_1 %281%29.png" />
+    <Content Include="assets\images\choose_us_1.png" />
+    <Content Include="assets\images\choose_us_2 %281%29.png" />
+    <Content Include="assets\images\choose_us_2.png" />
+    <Content Include="assets\images\choose_us_3 %281%29.png" />
+    <Content Include="assets\images\choose_us_3.png" />
+    <Content Include="assets\images\choose_us_4.png" />
+    <Content Include="assets\images\contacts_find_us_1.png" />
+    <Content Include="assets\images\contacts_find_us_2.png" />
+    <Content Include="assets\images\contacts_find_us_3.png" />
+    <Content Include="assets\images\contacts_find_us_email.png" />
+    <Content Include="assets\images\contacts_find_us_location.png" />
+    <Content Include="assets\images\contacts_find_us_phone.png" />
+    <Content Include="assets\images\contact_subbanner_background.png" />
+    <Content Include="assets\images\contact_us_background %281%29.jpg" />
+    <Content Include="assets\images\contact_us_background.jpg" />
+    <Content Include="assets\images\contact_us_image %281%29.png" />
+    <Content Include="assets\images\contact_us_image.png" />
+    <Content Include="assets\images\creatine_web.jpg" />
+    <Content Include="assets\images\curl-ups.png" />
+    <Content Include="assets\images\cytogainer-6-lbs-chocolate-malt.jpg" />
+    <Content Include="assets\images\dumball-icon.png" />
+    <Content Include="assets\images\ER8BLTLXsAEaGIS.jpg" />
+    <Content Include="assets\images\f3f169c9060443d6c25a14a79211cd94.jpg" />
+    <Content Include="assets\images\facilities_1.jpg" />
+    <Content Include="assets\images\facilities_2.jpg" />
+    <Content Include="assets\images\facilities_3.jpg" />
+    <Content Include="assets\images\facilities_4.jpg" />
+    <Content Include="assets\images\facilities_icon_1.png" />
+    <Content Include="assets\images\facilities_icon_2.png" />
+    <Content Include="assets\images\facilities_icon_3.png" />
+    <Content Include="assets\images\facilities_icon_4.png" />
+    <Content Include="assets\images\footer-boxing-img.jpg" />
+    <Content Include="assets\images\footer_left_icon %281%29.png" />
+    <Content Include="assets\images\footer_left_icon %282%29.png" />
+    <Content Include="assets\images\footer_left_icon %283%29.png" />
+    <Content Include="assets\images\footer_left_icon %284%29.png" />
+    <Content Include="assets\images\footer_left_icon.png" />
+    <Content Include="assets\images\footer_logo %281%29.png" />
+    <Content Include="assets\images\footer_logo.png" />
+    <Content Include="assets\images\footer_right_icon %281%29.png" />
+    <Content Include="assets\images\footer_right_icon %282%29.png" />
+    <Content Include="assets\images\footer_right_icon %283%29.png" />
+    <Content Include="assets\images\footer_right_icon %284%29.png" />
+    <Content Include="assets\images\footer_right_icon.png" />
+    <Content Include="assets\images\girl-fit_bg.jpg" />
+    <Content Include="assets\images\gym-member.png" />
+    <Content Include="assets\images\gym-slider-img-2.jpg" />
+    <Content Include="assets\images\gym-slider-img_1.jpg" />
+    <Content Include="assets\images\home-1_logo.png" />
+    <Content Include="assets\images\home_1_slider_1.jpg" />
+    <Content Include="assets\images\Jo_Achim_girl_riding_an_arabian_horse_in_the_middle_of_the_dese_dbfe0ec4-9036-4bff-b8ac-b265e756224e.png" />
+    <Content Include="assets\images\karate-icon.png" />
+    <Content Include="assets\images\karte-icon.png" />
+    <Content Include="assets\images\news-one-img.jpg" />
+    <Content Include="assets\images\news-two-img.jpg" />
+    <Content Include="assets\images\our_news_1 %281%29.png" />
+    <Content Include="assets\images\our_news_1.png" />
+    <Content Include="assets\images\our_news_2 %281%29.png" />
+    <Content Include="assets\images\our_news_2.png" />
+    <Content Include="assets\images\our_news_3 %281%29.png" />
+    <Content Include="assets\images\our_news_3 %282%29.png" />
+    <Content Include="assets\images\our_news_3.png" />
+    <Content Include="assets\images\our_services_background.png" />
+    <Content Include="assets\images\our_services_left_icon.png" />
+    <Content Include="assets\images\our_services_right_icon.png" />
+    <Content Include="assets\images\package-1.jpg" />
+    <Content Include="assets\images\package-2.jpg" />
+    <Content Include="assets\images\package-3.jpg" />
+    <Content Include="assets\images\png-clipart-bodybuilding-graphics-fitness-centre-logo-bodybuilding-physical-fitness-logo %281%29.png" />
+    <Content Include="assets\images\pricing_tables_1.png" />
+    <Content Include="assets\images\pricing_tables_2.png" />
+    <Content Include="assets\images\pricing_tables_3.png" />
+    <Content Include="assets\images\product-1.jpg" />
+    <Content Include="assets\images\product-2.jpg" />
+    <Content Include="assets\images\product-3.jpg" />
+    <Content Include="assets\images\product-4.jpg" />
+    <Content Include="assets\images\quote_background.png" />
+    <Content Include="assets\images\quote_left_icon.png" />
+    <Content Include="assets\images\quote_right_icon.png" />
+    <Content Include="assets\images\skiping-icon.png" />
+    <Content Include="assets\images\sprite.png" />
+    <Content Include="assets\images\stats_background.png" />
+    <Content Include="assets\images\stats_left_icon.png" />
+    <Content Include="assets\images\story-banner.png" />
+    <Content Include="assets\images\sven-mieke-MsCgmHuirDo-unsplash.jpg" />
+    <Content Include="assets\images\team-bg.jpg" />
+    <Content Include="assets\images\team_member_1 %281%29.png" />
+    <Content Include="assets\images\team_member_1.png" />
+    <Content Include="assets\images\team_member_2 %281%29.png" />
+    <Content Include="assets\images\team_member_2.png" />
+    <Content Include="assets\images\team_member_3 %281%29.png" />
+    <Content Include="assets\images\team_member_3.png" />
+    <Content Include="assets\images\team_member_4.png" />
+    <Content Include="assets\images\team_member_5.png" />
+    <Content Include="assets\images\team_member_6.png" />
+    <Content Include="assets\images\team_member_background.png" />
+    <Content Include="assets\images\team_member_left_icon.png" />
+    <Content Include="assets\images\team_member_right_icon.png" />
+    <Content Include="assets\images\testimonials_apostrophy.png" />
+    <Content Include="assets\images\testimonials_background.jpg" />
+    <Content Include="assets\images\testimonials_image.png" />
+    <Content Include="assets\images\testimonials_white_line.png" />
+    <Content Include="assets\images\trademil.png" />
+    <Content Include="assets\images\trainers_subbanner_background.png" />
+    <Content Include="assets\images\trainers_success_image.png" />
+    <Content Include="assets\images\video_img.jpg" />
+    <Content Include="assets\images\video_img_icon.png" />
+    <Content Include="assets\images\watch-icon.png" />
+    <Content Include="assets\images\Workout-Wallpaper-1920x1080-1.jpg" />
+    <Content Include="assets\images\xtreme_fitness_logo %281%29.png" />
+    <Content Include="assets\images\xtreme_fitness_logo.png" />
+    <Content Include="assets\images\xxh.jpeg" />
+    <Content Include="assets\images\yoga_programs.jpg" />
+    <Content Include="assets\images\0052c02c-f15a-4e15-b348-30cd1d851d7b.png" />
+    <Content Include="assets\images\27ec4392-7499-436d-a50b-6d90915c379e.png" />
+    <Content Include="assets\images\3272f4e1-4685-4bb1-81f3-4c8cce3363cb.png" />
+    <Content Include="assets\images\3ca841d2-cb0b-40f7-b07a-736c7b0136fa.png" />
+    <Content Include="assets\images\7d983e00-f4a6-4eea-a970-8f8ecf9ba28d.png" />
+    <Content Include="assets\images\8eafa9d0-a4f6-4110-a3ce-63a4bb23fd0e.png" />
+    <Content Include="assets\Image\AleBrotto_Person_in_meditation_inside_a_room_universe_backgroun_67012d55-b1a5-4c9d-b961-1a7655394631.png" />
+    <Content Include="assets\Image\Background.jpg" />
+    <Content Include="assets\Image\Background2.jpeg" />
+    <Content Include="assets\Image\Cavid_Arnold_schwarzenegger_in_the_gym_at_night_with_lights_mov_b349ef19-e8fb-4052-807d-3a01d48c7f6a.png" />
+    <Content Include="assets\Image\Cavid_cinema_atmosphere_in_the_gym_night_in_the_light_of_a_lamp_4a4d043a-f26e-4048-9bcc-dd8956c633f4.png" />
+    <Content Include="assets\Image\Cavid_cinema_atmosphere_in_the_gym_night_in_the_light_of_a_lamp_dcad94e3-0bf9-462c-900f-4ed3fbef6272.png" />
+    <Content Include="assets\Image\Cavid_realistic_cabin_a-frame_c0a3fd14-d173-4304-84cf-14c1ff3bb016.png" />
+    <Content Include="assets\Image\GYM-PC-Wallpaper-HD.jpg" />
+    <Content Include="assets\Image\ocr.png" />
+    <Content Include="assets\js\animation.js" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\carousel.js" />
+    <Content Include="assets\js\counter.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\jquery-1.11.3.min.js" />
+    <Content Include="assets\js\jquery-3.6.0.min.js" />
+    <Content Include="assets\js\jquery.revolution.js" />
+    <Content Include="assets\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="assets\js\jquery.themepunch.tools.min.js" />
+    <Content Include="assets\js\js\theme-option\style-switcher\assets\js\jquery.cookie.js" />
+    <Content Include="assets\js\js\theme-option\style-switcher\assets\js\style.switcher.js" />
+    <Content Include="assets\js\less.js" />
+    <Content Include="assets\js\owl.carousel.js" />
+    <Content Include="assets\js\popper.min.js" />
+    <Content Include="assets\js\site.js" />
+    <Content Include="assets\js\video-popup.js" />
+    <Content Include="assets\js\video-section.js" />
+    <Content Include="assets\Lib\css\bootstrap-grid.css" />
+    <Content Include="assets\Lib\css\bootstrap-grid.min.css" />
+    <Content Include="assets\Lib\css\bootstrap-grid.rtl.css" />
+    <Content Include="assets\Lib\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="assets\Lib\css\bootstrap-reboot.css" />
+    <Content Include="assets\Lib\css\bootstrap-reboot.min.css" />
+    <Content Include="assets\Lib\css\bootstrap-reboot.rtl.css" />
+    <Content Include="assets\Lib\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="assets\Lib\css\bootstrap-utilities.css" />
+    <Content Include="assets\Lib\css\bootstrap-utilities.min.css" />
+    <Content Include="assets\Lib\css\bootstrap-utilities.rtl.css" />
+    <Content Include="assets\Lib\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="assets\Lib\css\bootstrap.css" />
+    <Content Include="assets\Lib\css\bootstrap.min.css" />
+    <Content Include="assets\Lib\css\bootstrap.rtl.css" />
+    <Content Include="assets\Lib\css\bootstrap.rtl.min.css" />
+    <Content Include="assets\Lib\css\style.css" />
+    <Content Include="assets\Lib\js\bootstrap.bundle.js" />
+    <Content Include="assets\Lib\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\Lib\js\bootstrap.esm.js" />
+    <Content Include="assets\Lib\js\bootstrap.esm.min.js" />
+    <Content Include="assets\Lib\js\bootstrap.js" />
+    <Content Include="assets\Lib\js\bootstrap.min.js" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Jquery\jquery-3.6.1.min.js" />
+    <Content Include="Jquery\Main.js" />
+    <Content Include="Jquery\MyJavaScriptFile.js" />
+    <Content Include="Models\Data\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Data\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="MyJs\angular.min.js" />
+    <Content Include="MyJs\CommonFactory.js" />
+    <Content Include="MyJs\CommonService.js" />
+    <Content Include="MyJs\Main.js" />
+    <Content Include="MyJs\PersonSercive.js" />
+    <Content Include="MyJs\ProjectService.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CoachController.cs" />
+    <Compile Include="Controllers\EgitimController.cs" />
+    <Compile Include="Controllers\EgitimKategoriController.cs" />
+    <Compile Include="Controllers\ErrorFoundController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IstatistikController.cs" />
+    <Compile Include="Controllers\KategoriController.cs" />
+    <Compile Include="Controllers\KullaniciController.cs" />
+    <Compile Include="Controllers\SatisController.cs" />
+    <Compile Include="Controllers\SepetController.cs" />
+    <Compile Include="Controllers\UrunController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdminRol.cs" />
+    <Compile Include="Models\Business\AccountUser.cs" />
+    <Compile Include="Models\Business\TUser.cs" />
+    <Compile Include="Models\Data\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\TblAddress.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\TblEgitim.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\TblEgitimKategori.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\TblEgitimSepet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\TblKategori.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\TblKullanici.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\TblSatislar.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\TblSepet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Data\TblUrun.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="assets\Lib\js\bootstrap.bundle.js.map" />
+    <Content Include="assets\Lib\js\bootstrap.bundle.min.js.map" />
+    <Content Include="assets\Lib\js\bootstrap.esm.js.map" />
+    <Content Include="assets\Lib\js\bootstrap.esm.min.js.map" />
+    <Content Include="assets\Lib\js\bootstrap.js.map" />
+    <Content Include="assets\Lib\js\bootstrap.min.js.map" />
+    <Content Include="assets\Lib\css\bootstrap-grid.css.map" />
+    <Content Include="assets\Lib\css\bootstrap-grid.min.css.map" />
+    <Content Include="assets\Lib\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="assets\Lib\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="assets\Lib\css\bootstrap-reboot.css.map" />
+    <Content Include="assets\Lib\css\bootstrap-reboot.min.css.map" />
+    <Content Include="assets\Lib\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="assets\Lib\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="assets\Lib\css\bootstrap-utilities.css.map" />
+    <Content Include="assets\Lib\css\bootstrap-utilities.min.css.map" />
+    <Content Include="assets\Lib\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="assets\Lib\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="assets\Lib\css\bootstrap.css.map" />
+    <Content Include="assets\Lib\css\bootstrap.min.css.map" />
+    <Content Include="assets\Lib\css\bootstrap.rtl.css.map" />
+    <Content Include="assets\Lib\css\bootstrap.rtl.min.css.map" />
+    <EntityDeploy Include="Models\Data\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Data\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="assets\images\5002539220_X_01.heic" />
+    <None Include="packages.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Urun\Index.cshtml" />
+    <Content Include="Views\Urun\Ekle.cshtml" />
+    <Content Include="Views\Urun\Guncelle.cshtml" />
+    <Content Include="Views\Urun\KritikStok.cshtml" />
+    <Content Include="Views\Urun\StokCount.cshtml" />
+    <Content Include="Views\Kategori\Index.cshtml" />
+    <Content Include="Views\Kategori\Ekle.cshtml" />
+    <Content Include="Views\Kategori\Guncelle.cshtml" />
+    <Content Include="Views\Sepet\Index.cshtml" />
+    <Content Include="Views\Sepet\SepetCount.cshtml" />
+    <Content Include="Views\Satis\Index.cshtml" />
+    <Content Include="Views\Satis\islem.cshtml" />
+    <Content Include="Views\Satis\SatinAl.cshtml" />
+    <Content Include="Views\Satis\HepsiniSatinAl.cshtml" />
+    <Content Include="Views\Account\Guncelle.cshtml" />
+    <Content Include="Views\Kullanici\SifreReset.cshtml" />
+    <Content Include="Views\Istatistik\Index.cshtml" />
+    <Content Include="Views\Coach\ORnek.cshtml" />
+    <Content Include="Views\Egitim\Index.cshtml" />
+    <Content Include="Views\Egitim\Ekle.cshtml" />
+    <Content Include="Views\EgitimKategori\Index.cshtml" />
+    <Content Include="Views\EgitimKategori\Ekle.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Hakkimizda.cshtml" />
+    <Content Include="Views\Satis\EgitimSatinAl.cshtml" />
+    <Content Include="Views\Satis\EgitimIslem.cshtml" />
+    <Content Include="Views\ErrorFound\Index.cshtml" />
+    <Content Include="Views\Egitim\Guncelle.cshtml" />
+    <Content Include="Views\EgitimKategori\Guncelle.cshtml" />
+    <Content Include="Views\Satis\Address.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50393</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44312/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Grpc.Core.2.46.6\build\net45\Grpc.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Grpc.Core.2.46.6\build\net45\Grpc.Core.targets'))" />
+  </Target>
+  <Import Project="..\packages\Grpc.Core.2.46.6\build\net45\Grpc.Core.targets" Condition="Exists('..\packages\Grpc.Core.2.46.6\build\net45\Grpc.Core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

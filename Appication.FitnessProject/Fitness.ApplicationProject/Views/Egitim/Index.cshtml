@@ -1,0 +1,99 @@
+﻿@using Fitness.ApplicationProject.Models.Data
+@model List<TblEgitim>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    @using (Html.BeginForm())
+    {
+        <div style="width:60%; float:left">
+            @Html.TextBox("ara", null, new { @class = "form-control", @placeholder = "Eğitim adı arayınız" })
+            <div style="float:left">
+                <input type="submit" name="btn" value="Ara" class="btn btn-info" />
+                @if (User.IsInRole("A"))
+                {
+                    <a href="/Egitim/Ekle" class="btn btn-primary">Ekle</a>
+                }
+            </div>
+        </div>
+    }
+
+
+  
+
+
+
+
+
+</div>
+        <br />
+        <br />
+        <section class="pricing_tables_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="pricing_tables_content">
+                            <h5>Eğitimler</h5>
+                            <h2>FİYAT PLANINIZI SEÇİN</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row aos-init aos-animate" data-aos="fade-up">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="pricing_tables_box_content">
+                                <div class="pricing_tables_box_upper_portion">
+                                    <figure class="mb-0">
+                                        <img src="~/assets/images/@item.EgitimResmi" alt="" class="img-fluid">
+                                    </figure>
+                                    <div class="pricing_tables_box_image_content">
+                                        <span class="price">@item.EgitimFiyat</span>
+                                        <span class="month">Aylık</span>
+                                    </div>
+                                </div>
+                                <div class="pricing_tables_box_lower_portion">
+                                    <h5>@item.EgitimAdi</h5>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fa-solid fa-check" aria-hidden="true"></i>Günler-@item.EgitimGunleri Saat-@item.EgitimSaat
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check" aria-hidden="true"></i>Uzmanımız-@item.CoachAdi
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check" aria-hidden="true"></i>Cinsi-@item.CoachCinsi
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check" aria-hidden="true"></i>Doğum tarihi-@item.CoachDogumTarih
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check" aria-hidden="true"></i>@item.CoachTel
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check" aria-hidden="true"></i>@item.CoachEmail
+                                        </li>
+                                    </ul>
+                                    <div class="btn_wrapper">
+                                        @if (User.IsInRole("User"))
+                                        {                                        
+                                            <a href="/Satis/EgitimSatinAl/@item.EgitimId" class="btn btn-success">Satın Al</a>
+                                        }
+                                        @if (User.IsInRole("A"))
+                                        {
+                                            @Html.ActionLink("Sil", "Sil", new { id = item.EgitimId }, new { @class = "btn btn-danger", onclick = "return confirm('Silmek istiuormusunuz?')" })
+                                            <a href="/Egitim/Guncelle/@item.EgitimId" class="btn btn-warning"> Düzenle</a>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </section>
+
+
+
+

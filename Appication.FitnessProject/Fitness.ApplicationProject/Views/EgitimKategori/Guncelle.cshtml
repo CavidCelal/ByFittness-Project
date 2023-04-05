@@ -1,0 +1,33 @@
+﻿@model Fitness.ApplicationProject.Models.Data.TblEgitimKategori
+@{
+    ViewBag.Title = "Guncelle";
+}
+
+@using (Html.BeginForm("Guncelle", "EgitimKategori", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.EgitimKategoriId)
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <form class="form-group" method="post">
+                    <div style="margin-bottom:15px;">
+                        <label>Ad</label>
+                        <input type="text" name="EgitimKategoriAdi"
+                               class="form-control" value="@Model.EgitimKategoriAdi" />
+                      
+                    </div>
+
+                    <div style="margin-bottom:15px;">
+
+                        <label>Açıklama</label>
+                        <input type="text" name="Aciklama" class="form-control" value="@Model.Aciklama" />
+
+                      
+                    </div>
+                    <button class="btn btn-success">Güncelle</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
